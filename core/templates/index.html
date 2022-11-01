@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dövlət qurumları </h1>
+    {% for i in partner_dovlet %}
+    <h3>
+
+    {{ i.name }}
+
+    </h3>
+    {% endfor %}
+
+    
+    <h1>Beynəlxalq qurumlar </h1>
+
+    {% for i in partner_beynelxalq %}
+    <h3>
+
+    {{ i.name }}
+
+    </h3>
+    {% endfor %}
+
+
+
+
+
+    <h1> Yerli şirkətlər </h1>
+
+    {% for i in partner_yerli %}
+    <h3>
+
+    {{ i.name }}
+
+    </h3>
+    {% endfor %}
+
+
+
+
+
+
+    <h1>Xarici şirkətlər</h1>
+
+    {% for i in partner_xarici %}
+    <h3>
+
+    {{ i.name }}
+
+    </h3>
+    {% endfor %}
+
+
+
+
+
+
+    <h1>Assosiasiyalar </h1>
+
+
+    {% for i in partner_assosiasiyalar %}
+    <h3>
+
+    {{ i.name }}
+
+    </h3>
+    {% endfor %}
+
+
+
+
+</body>
+</html>
