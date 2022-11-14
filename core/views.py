@@ -1,9 +1,25 @@
-import imp
 from django.shortcuts import render
 from core.models import Partner
 # Create your views here.
 
+
 def index(request):
+    return render(request, 'index.html')
+
+# def partners(request):
+#     return render(request, 'partners.html')
+
+def about(request):
+    return render(request, 'about.html')
+
+def leadership(request):
+    return render(request, 'leadership.html')
+
+def emin(request):
+    return render(request, 'emin-aliyev.html')
+
+
+def partners(request):
     partner_dovlet = Partner.objects.filter(partner__name__contains='Dövlət qurumları').order_by('-id')
     partner_beynelxalq = Partner.objects.filter(partner__name__contains='Beynəlxalq qurumlar').order_by('-id')
     partner_yerli = Partner.objects.filter(partner__name__contains='Yerli şirkətlər').order_by('-id')
@@ -19,4 +35,4 @@ def index(request):
         'partner_assosiasiyalar': partner_assosiasiyalar
     }
 
-    return render(request, 'index.html', context)
+    return render(request, 'partners.html', context)

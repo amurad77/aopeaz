@@ -1,0 +1,116 @@
+
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Partners | AOPE{% endblock %}
+
+
+
+{% block content %}
+
+    <main id="partners-and-customers-page">
+        <section class="banner single-page-banner">
+            <div class="banner-bg">
+                <div class="container caption text-start">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Əsas Səhifə</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Partnyorlarımız</li>
+                        </ol>
+                    </nav>
+                    <h2>Partnyorlarımız</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="section mt-5">
+            <div class="container">
+                <h3>Dövlət qurumları</h3>
+                <div class="line"></div>
+                <div class="row">
+
+                    {% for i in partner_dovlet %}
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="margin: 0 35px; background-image:  url( {{i.logo.url}} );"></div>
+                        </div>
+                        <h4>{{ i.name }}</h4>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="container">
+                <h3>Beynəlxalq qurumlar</h3>
+                <div class="line"></div>
+                <div class="row">
+
+                    {% for i in partner_beynelxalq %}
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="margin: 0 35px; background-image:  url( {{i.logo.url}} );"></div>
+                        </div>
+                        <h4>{{ i.name }}</h4>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="container">
+                <h3>Yerli şirkətlər</h3>
+                <div class="line"></div>
+                <div class="row">
+
+
+                    {% for i in partner_yerli %}
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="margin: 0 35px; background-image:  url( {{i.logo.url}} );"></div>
+                        </div>
+                        <h4>{{ i.name }}</h4>
+                    </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+
+            <div class="container">
+                <h3>Xarici şirkətlər</h3>
+                <div class="line"></div>
+                <div class="row">
+
+                    {% for i in partner_xarici %}
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="margin: 0 35px; background-image:  url( {{i.logo.url}} );"></div>
+                        </div>
+                        <h4>{{ i.name }}</h4>
+                    </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+
+            <div class="container">
+                <h3>Assosiasiyalar</h3>
+                <div class="line"></div>
+                <div class="row">
+
+                    {% for i in partner_assosiasiyalar %}
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="margin: 0 35px; background-image:  url( {{i.logo.url}} );"></div>
+                        </div>
+                        <h4>{{ i.name }}</h4>
+                    </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+   
+{% endblock %}
+

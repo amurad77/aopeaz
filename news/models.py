@@ -32,9 +32,8 @@ class News(models.Model):
     def __str__(self):
         return self.title
 
-
     def get_absolute_url(self):
-        return reverse('news_detail', kwargs = {'slug': self.slug})
+        return reverse('news_details', kwargs = {'slug': self.slug})
 
     def get_uniqe_slug(self):
         slug = slugify(self.title.replace('ə', 'e'))
@@ -44,3 +43,7 @@ class News(models.Model):
             unique_slug = '{}-{}'.format(slug, counter)
             counter += 1
         return unique_slug
+    
+    def save(self, *args, **kwargs):
+        self.slug = self.get_uniqe_slug()
+        return super(News, self).save(*args, **kwargs)

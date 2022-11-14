@@ -1,79 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Dövlət qurumları </h1>
-    {% for i in partner_dovlet %}
-    <h3>
 
-    {{ i.name }}
+{% extends "base.html" %}
+{% load static %}
 
-    </h3>
-    {% endfor %}
+{% block title %}Əsas Səhifə | AOPE{% endblock %}
 
-    
-    <h1>Beynəlxalq qurumlar </h1>
+{% block css %} 
+<link rel="stylesheet" href="{% static 'css/none.css' %}">
+{% endblock %}
 
-    {% for i in partner_beynelxalq %}
-    <h3>
+{% block background %}
+id="homepage"
+{% endblock %}
 
-    {{ i.name }}
+{% block content %}
 
-    </h3>
-    {% endfor %}
+  <div class="container">
+    <div class="logo-contact">
+      <div class="logo">
+        <img src="{% static 'img/logo/aope_logo_white.png' %}" alt="AOPE logo">
+      </div>
+      <div class="contact">
+        <div class="location">
+          <span><i class="fa-solid fa-location-dot"></i></span>
+          <p>Kral Hüseyn 64B, <br>Bakı, Azərbaycan</p>
+        </div>
+        <div class="telephone">
+          <span><i class="fas fa-phone-volume"></i></span>
+          <p>(+994 12) 561 08 83<br>(+994 51) 394 33 95<br></p>
+        </div>
+      </div>
+    </div>
 
-
-
-
-
-    <h1> Yerli şirkətlər </h1>
-
-    {% for i in partner_yerli %}
-    <h3>
-
-    {{ i.name }}
-
-    </h3>
-    {% endfor %}
-
-
-
-
-
-
-    <h1>Xarici şirkətlər</h1>
-
-    {% for i in partner_xarici %}
-    <h3>
-
-    {{ i.name }}
-
-    </h3>
-    {% endfor %}
-
-
-
-
-
-
-    <h1>Assosiasiyalar </h1>
-
-
-    {% for i in partner_assosiasiyalar %}
-    <h3>
-
-    {{ i.name }}
-
-    </h3>
-    {% endfor %}
+    <div class="main-menu">
+      <div class="row">
+        <div class="main-img col-12 col-lg-7">
+          <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="background-image: url('{% static 'img/img-1.jpg' %}');"></div>
+              
+              <div class="carousel-item" style="background-image: url('{% static 'img/img-2.jpg' %}');"></div>
+              <div class="carousel-item" style="background-image: url('{% static 'img/img-3.jpg' %}');"></div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="main-content col-12 col-lg-5">
+          <ul>
+            <li><a href="/about"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp;Haqqımızda</a></li>
+            <li><a href="/leadership"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp;İdarə Heyəti</a></li>
+            <li><a href="/news"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp;Xəbərlər</a></li>
+            <li><a href="/partners"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp;Partnyorlarımız</a></li>
+            <li><a href="/membership"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp;Üzvlük</a></li>
+            <li><a href="/contact"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp;Əlaqə</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-
-
-</body>
-</html>
+{% endblock %}

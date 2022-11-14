@@ -15,9 +15,23 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from core.views import index
+from core.views import index, partners, about, leadership, emin
+from news.views import news, news_details
+from contact.views import contact, membership
+from django.conf.urls.static import static
+from django.conf import settings
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', index)
-]
+    # path('index1/', index1),
+    path('index/', index),
+    # path('news_detail/<slug:slug>/', news_details, name='news_details'),
+    path('partners/', partners),
+    path('about/', about),
+    path('leadership/', leadership),
+    path('emin-aliyev/', emin),
+    path('news/', news),
+    path('contact/', contact),
+    path('membership/', membership),
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Xəbərlər | AOPE{% endblock %}
+
+
+
+{% block content %}
+
+
+
+    <main id="news-page">
+        <section class="banner single-page-banner">
+            <div class="banner-bg">
+                <div class="container caption text-start">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Əsas Səhifə</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Xəbərlər</li>
+                        </ol>
+                    </nav>
+                    <h2>Xəbərlər</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="section news-section">
+            <div class="container">
+                <div class="row">
+
+
+
+                    {% for i in news %}
+
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <a href="news-details.html">
+                                <div class="card-img-top" style="background-image: url({{i.image.url}});"></div>
+                            </a>
+                            <div class="card-body">
+                                <span>30 Avqust 2022</span>
+                                <a href="news-details.html"><h5 class="card-title">{{i.title}}</h5></a>
+                                <p class="card-text">{{i.description1}}</p>
+                                <a href="news-details.html" class="btn btn-green">Daha ətraflı</a>
+                            </div>
+                        </div>     
+                    </div>
+                    
+                    {% endfor %}
+
+
+                </div>
+
+                <nav class="page-pagination">
+                    <ul class="pagination">
+                        {% if page_obj.has_previous %}
+                        <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}"><i class="fa-solid fa-angle-left"></i></a></li>
+                        {% endif %}
+
+                        <li class="page-item"><a class="deactive page-link active">{{ page_obj.number }}</a></li>
+                        <li class="page-item"><a class="deactive page-link">/</a></li>
+                        <li class="page-item"><a class="deactive page-link">{{ page_obj.paginator.num_pages }}</a></li>
+                        {% if page_obj.has_next %}
+                        <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}"><i class="fa-solid fa-angle-right"></i></a></li>
+                        {% endif %}
+
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.getElementsByClassName("deactive").forEach(element => {
+            element.addEventListener("click", function(e) {
+                e.preventDefault();
+            });
+        });
+    </script>
+
+
+{% endblock %}

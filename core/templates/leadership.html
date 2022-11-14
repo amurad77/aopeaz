@@ -1,0 +1,196 @@
+
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} İdarə Heyəti | AOPE{% endblock %}
+
+
+
+{% block content %}
+
+    <main>
+        <section class="banner single-page-banner">
+            <div class="banner-bg">
+                <div class="container caption text-start">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Əsas Səhifə</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">İdarə Heyəti</li>
+                        </ol>
+                    </nav>
+                    <h2>Rəhbərlik</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="section leadership-section">
+            <div class="container">
+                <div class="row leader">
+                    <div class="col-12 col-md-3">
+                        <div class="left-side">
+                            <img src="{% static 'img/leadership/emin-aliyev.jpg' %}" alt="Emin Əliyev">
+                            <div class="social-media">
+                                <a href="https://www.facebook.com/emin.aliyev.9275439"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://www.linkedin.com/in/emin-aliyev-46b861229/"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-side col-12 col-md-3">
+                        <h3>Emin Əliyev</h3>
+                        <p>İdarə Heyətinin sədri</p>
+                        <p class="mt-auto"><a href="/emin-aliyev">Daha ətraflı</a></p>
+                    </div>
+                </div>
+                <div class="row team">
+                    <div class="col-12 col-md-3">
+                        <div class="top-side">
+                            <img src="{% static 'img/leadership/elcin-ekberov.jpg' %}" alt="Elçin Əkbərov">
+                            <div class="social-media">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="overlay">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#elchinEkberov">Daha ətraflı</a>
+                            </div>
+                        </div>
+                        <div class="bottom-side">
+                            <h3>Elçin Əkbərov</h3>
+                            <p>İdarə heyəti üzvü</p>
+                        </div>
+                        <div class="modal fade" id="elchinEkberov" tabindex="-1" aria-labelledby="elchinEkberovLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="left-side col-12 col-md-3 my-2">
+                                        <img src="{% static 'img/leadership/elcin-ekberov.jpg' %}" alt="Elçin Əkbərov">
+                                        <div class="social-media">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="right-side col-12 col-md-5 my-2">
+                                        <h3>Elçin Əkbərov</h3>
+                                        <p>İdarə heyəti üzvü</p>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="more-details m-0 px-5">
+                                        <p>Elçin Ehtibar oğlu Əkbərov 05.07.1985-ci ildə Şəki şəhərində anadan olmuşdur.</p>
+                                        <p>1991-2002-ci illərdə Şəki şəhəri 7 saylı orta məktəbdə, 2002-2006-cı illərdə Azərbaycan Dövlət İqtisad Universitetində BİM (XİQ) üzrə bakalavr, 2006-2008-ci illərdə həmin universitetdə Maliyyə üzrə MBA, 2012-2015-ci illərdə İqtisadiyyat Nazirliyi yanında İqtisadi İslahatlar Elmi-Tədqiqat İnstitutunda doktorantura təhsili almışdır.</p>
+                                        <p>2017-ci ildə Amerika Birləşmiş Ştatlarında, 2018-ci ildə Almaniya Federativ Respublikasında ümumi idarəetmə və aqrar layihələrin idarə edilməsi üzrə təlim keçmişdir.</p>
+                                        <p>2006-cı ildən müxtəlif özəl təşkilatlarda mütəxəssis, 2010-cu ildən rəhbər vəzifələrdə çalışmışdır. 2016-cı ildən etibarən sahibkarlıq və ictimai fəaliyyət ilə məşğuldur.</p>
+                                        <p>İngilis və rus dillərini sərbəst bilir.</p>
+                                        <p>Ailəlidir, iki övladı var.</p>
+                                        <p><b>(+994 50) 500 06 65</b><br><b>e.akbarov@aope.az</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="top-side">
+                            <img src="{% static 'img/leadership/sevda-qasimova.jpg' %}" alt="Sevda Qasımova">
+                            <div class="social-media">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="overlay">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#sevdaQasimova">Daha ətraflı</a>
+                            </div>
+                        </div>
+                        <div class="bottom-side">
+                            <h3>Sevda Qasımova</h3>
+                            <p>İdarə heyəti üzvü</p>
+                        </div>
+                        <div class="modal fade" id="sevdaQasimova" tabindex="-1" aria-labelledby="sevdaQasimovaLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="left-side col-12 col-md-3 my-2">
+                                        <img src="{% static 'img/leadership/sevda-qasimova.jpg' %}" alt="Sevda Qasımova">
+                                        <div class="social-media">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="right-side col-12 col-md-5 my-2">
+                                        <h3>Sevda Qasımova</h3>
+                                        <p>İdarə heyəti üzvü</p>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="more-details m-0 px-5">
+                                        <p>Sevda Qasımova 1990-cı ildə Azərbaycan Slavyan Universitetini bitirib. Universiteti bitirəndən sonra pedaqoji fəaliyyətlə məşğul olub. Daha sonra televiziya sahəsində jurnalist olaraq fəaliyyət göstərib. 2011-ci ildən etibarən orqanik sabun istehsalı ilə məşğul olmağa başlayıb. Daha sonra isə Moskvada qabaqcıl, innovative sabun istehsalını öyrənib. Sevda Qasımova öz brendini "Gasimov Təbii əl işi Sabun" şirkətini təsis edib. 10 ildir ki, bu istiqamətdə fəaliyyət göstərir.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="top-side">
+                            <img src="{% static 'img/leadership/ramil-ezmemedov.jpg' %}" alt="Ramil Əzməmmədov">
+                            <div class="social-media">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="overlay">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#ramilEzmemmedov">Daha ətraflı</a>
+                            </div>
+                        </div>
+                        <div class="bottom-side">
+                            <h3>Ramil Əzməmmədov</h3>
+                            <p>İdarə heyəti üzvü</p>
+                        </div>
+                        <div class="modal fade" id="ramilEzmemmedov" tabindex="-1" aria-labelledby="ramilEzmemmedovLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="left-side col-12 col-md-3 my-2">
+                                        <img src="{% static 'img/leadership/ramil-ezmemedov.jpg' %}" alt="Ramil Əzməmmədov">
+                                        <div class="social-media">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="right-side col-12 col-md-5 my-2">
+                                        <h3>Ramil Əzməmmədov</h3>
+                                        <p>İdarə heyəti üzvü</p>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="more-details m-0 px-5">
+                                        <p>Ramil Əzməmmədov bakalavr təhsilini Azərbaycan Dövlət Aqrar Universitetində Kənd Təsərrüfatının İqtisadiyyatı və Magistr təhsilini isə FAO təqaüdü ilə Macarıstanın Sent İstvan Univesitetində Regionların İnkişafı və Aqrobiznes sahəsində almışdır.</p>
+                                        <p>2015 - 2021 ci illərdə Azərsun Holding və Agro Food İnvestments şirkətlərinin iri həcmli aqrar layihələrində çalışıb. Asia İnkişaf Bankının layihələrində yerli expert kimi fəaliyyət göstərib. Hazırda fermerlərə onlayn xidmət göstərən "Dr. Agro" startapının və "Bifox" gübrə istehsalı şirkətlərinin həmtəsisçisidir.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="top-side">
+                            <img src="{% static 'img/leadership/elmar-elizade.jpg' %}" alt="Elmar Əlizadə">
+                            <div class="social-media">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="overlay">
+                            </div>
+                        </div>
+                        <div class="bottom-side">
+                            <h3>Elmar Əlizadə</h3>
+                            <p>İdarə heyəti üzvü</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% endblock %}

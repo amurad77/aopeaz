@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Əlaqə | AOPE{% endblock %}
+
+
+
+{% block content %}
+
+
+    <main>
+        <section class="banner single-page-banner">
+            <div class="banner-bg">
+                <div class="container caption text-start">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Əsas Səhifə</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Üzvlük</li>
+                        </ol>
+                    </nav>
+                    <h2>Üzvlük</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="membership-text mb-5">
+                <h2>Aşağıdakı formu dolduraraq bizə üzvlük üçün onlayn müraciət edə bilərsiniz.</h2>
+            </div>
+
+            <div class="membership-form-image pt-3">
+                <div class="membership-form">
+                    <form action="#" method="POST">
+                        {% csrf_token %}
+                        <div class="form-group form-group-3">
+                            <div>
+                                <label for="name">Ad:</label>
+                                <!-- <input type="text" id=""> -->
+                                {{form.name}}
+
+                            </div>
+                            <div>
+                                <label for="name">Soyad:</label>
+                                <!-- <input type="text" id=""> -->
+                                {{form.surname}}
+                            </div>
+                            <div>
+                                <label for="name">Ata adı:</label>
+                                <!-- <input type="text" id=""> -->
+                                {{form.father_name}}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Cins:</label>
+                            <div>
+                                {{form.gender}}
+                                <!-- <input type="radio" name="gender" id="male"><label for="male" class="radio-label">Kişi</label>
+                                <input type="radio" name="gender" id="female"><label for="female" class="radio-label">Qadın</label> -->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Şəxsiyyət vəsiqəsinin seriya və nömrəsi:</label>
+                            {{form.passport_number}}
+                            <!-- <input type="text" id="" placeholder="Məs: AZE12345678"> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="">Şəxsiyyət vəsiqəsinin indentifikasiya (FİN) kodu:</label>
+                            {{form.passport_fin_number}}
+                            <!-- <input type="text" id="" placeholder="Məs: 1234567"> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="">Təvəllüd:</label>
+                            {{form.born}}
+                            <!-- <input type="date" id=""> -->
+                        </div>
+                        <div class="form-group">    
+                            <label for="">Doğulduğu yer:</label>
+                            {{form.place_of_birth}}
+                            <!-- <input type="text" id="" placeholder="Məs: Azərbaycan, Bakı şəh."> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="">Faktiki yaşayış yeri:</label>
+                            {{form.actual_residence}}
+                            <!-- <input type="text" id="" placeholder="Məs: Bakı şəh., Nərimanov ray."> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="">Ev nömrəsi:</label>
+                            {{form.home_phone_number}}
+                            <!-- <input type="tel" id="" placeholder="Məs: (+994 12) 999 99 99"> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="">Mobil nömrə:</label>
+                            {{form.phone_number}}
+                            <!-- <input type="tel" id="" placeholder="Məs: (+994 51) 999 99 99"> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="">E-poçt:</label>
+                            {{form.email}}
+                            <!-- <input type="email" id="" placeholder="Məs: example@example.com"> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="">Fəaliyyət istiqamətinizi qeyd edin:</label>
+                            {{form.areas_of_activity}}
+                            <!-- <input type="text" id="" placeholder="Məs: Orqanik sabun istehsalı"> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="">Qeyd etdiyiniz istiqamət üzrə neçə müddətdir ki, fəaliyyət göstərirsiniz?</label>
+                            {{form.work_time}}
+                            <!-- <input type="text" id="" placeholder="Məs: 1 il"> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="">Fəaliyyət istiqamətiniz təsisat üzərindəndirsə, təsisatın adını qeyd edin:</label>
+                            {{form.establishment}}
+                            <!-- <input type="text" id="" placeholder="Məs: XXX MMC, XXX İctimai Birliyi"> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="">Təsisatın yerləşdiyi ünvanı qeyd edin:</label>
+                            {{form.adress}}
+                            <!-- <input type="text" id="" placeholder="Məs: Bakı şəh., Nərimanov ray."> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="">Təsisatın media və əlaqə vasitələrini qeyd edin:</label>
+                            <div class="form-group form-group-3">
+                                {{form.facility_site}}
+                                {{form.facility_phone_number}}
+                                {{form.facility_mail}}
+                                <!-- <input type="text" id="" placeholder="Sayt"> -->
+                                <!-- <input type="tel" id="" placeholder="Telefon"> -->
+                                <!-- <input type="email" id="" placeholder="E-poçt"> -->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Təsisat olaraq bu günə kimi qeyd edilən istiqamət üzrə hansı layihələri həyata keçirmisiniz?</label>
+                            {{form.project}}
+                            <!-- <textarea name="" id="" cols="30" rows="3"></textarea> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="">İcra etdiyiniz layihələrin hansı  hissəsinin donor qurumlar və ya öz şəxsi hesabınıza keçirildiyini qeyd edin.</label>
+                            {{form.project_part}}
+                            <!-- <textarea name="" id="" cols="30" rows="3"></textarea> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="">Bizə üzv olmaqda məqsəd və gözləntilərinizi qeyd edin.</label>
+                            {{form.purpose}}
+                            <!-- <textarea name="" id="" cols="30" rows="3"></textarea> -->
+                        </div>
+                        <button type="submit" class="btn btn-green">Göndər</button>
+                        {% for message in messages %}
+                        <p class="text-success">{{message}}</p>        
+                        {% endfor %}
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}
