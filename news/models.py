@@ -22,7 +22,7 @@ class News(models.Model):
     description3 = models.TextField('Məzmun2', max_length = 2000, null=True, blank=True)
     description4 = models.TextField('Məzmun3', max_length = 2000, null=True, blank=True)
     description5 = models.TextField('Məzmun4', max_length = 2000, null=True, blank=True)
-    slug = models.SlugField('Slug', max_length = 110, unique = True, editable = False)
+    slug = models.SlugField('Slug', max_length = 256, unique = True, editable = False)
 
     # moderations
     created_at = models.DateTimeField(auto_now_add=True)
@@ -31,7 +31,7 @@ class News(models.Model):
 
     def __str__(self):
         return self.title
-
+        
     def get_absolute_url(self):
         return reverse('news_details', kwargs = {'slug': self.slug})
 

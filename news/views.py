@@ -19,6 +19,12 @@ def news(request):
         # if the page is out of range, deliver the last page
         page_obj = paginator.page(paginator.num_pages)
 
+    for i in news:
+
+        print(i.slug)
+
+
+
     context = {
         'page_obj': page_obj,
         'news': page_obj.object_list
@@ -28,10 +34,10 @@ def news(request):
 
 def news_details(request, slug):
     news = get_object_or_404(News, slug = slug)
-    # related_news = News.objects.exclude(slug=news.slug).order_by('-id')[0:2]
+
     context = {
-        'news' : news,
-        # 'related_news' : related_news
+        # 'news' : news,
+        # 'navbar': 'news'
     }
 
     return render(request, 'news-details.html', context)

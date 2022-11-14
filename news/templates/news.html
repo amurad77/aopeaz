@@ -34,14 +34,14 @@
 
                     <div class="col-12 col-md-4">
                         <div class="card">
-                            <a href="news-details.html">
+                            <a href="{{i.get_absolute_url}}">
                                 <div class="card-img-top" style="background-image: url({{i.image.url}});"></div>
                             </a>
                             <div class="card-body">
                                 <span>30 Avqust 2022</span>
-                                <a href="news-details.html"><h5 class="card-title">{{i.title}}</h5></a>
+                                <a href="{{i.get_absolute_url}}"><h5 class="card-title">{{i.title}}</h5></a>
                                 <p class="card-text">{{i.description1}}</p>
-                                <a href="news-details.html" class="btn btn-green">Daha ətraflı</a>
+                                <a href="{{i.get_absolute_url}}" class="btn btn-green">Daha ətraflı</a>
                             </div>
                         </div>     
                     </div>
