@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import Contact, Partner, PartnerCategory
+from .models import Partner, PartnerCategory
 
 # Register your models here.
 
-admin.site.register (Contact)
+# admin.site.register (Contact)
 
 class PartnerAdmin(admin.ModelAdmin):
     list_display = ('name','partner', 'created_at', 'updated_at')

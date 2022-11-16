@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-16 20:02+0400\n"
+"POT-Creation-Date: 2022-11-17 00:29+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,13 +26,88 @@ msgstr ""
 msgid "English"
 msgstr ""
 
+#: contact/forms.py:27
+msgid "Ad Soyadınız"
+msgstr "Name and Surname"
+
+#: contact/forms.py:33
+msgid "Telefon nömrəniz"
+msgstr "Telefon eng"
+
+#: contact/forms.py:39
+msgid "Email ünvanınız"
+msgstr "Mail eng"
+
+#: contact/forms.py:45
+msgid "Mövzu"
+msgstr "Movzu eng"
+
+#: contact/forms.py:50
+msgid "Mesajınız"
+msgstr "Mesajınız eng"
+
+#: contact/forms.py:119
+msgid "Məs: AZE12345678"
+msgstr ""
+
+#: contact/forms.py:124
+msgid "Məs: 1234567"
+msgstr ""
+
+#: contact/forms.py:131
+msgid "Məs: Azərbaycan, Bakı şəh."
+msgstr ""
+
+#: contact/forms.py:136 contact/forms.py:167
+msgid "Məs: Bakı şəh., Nərimanov ray."
+msgstr ""
+
+#: contact/forms.py:141
+msgid "Məs: (+994 12) 999 99 99"
+msgstr ""
+
+#: contact/forms.py:146
+msgid "Məs: (+994 51) 999 99 99"
+msgstr ""
+
+#: contact/forms.py:151
+msgid "Məs: example@example.com"
+msgstr ""
+
+#: contact/forms.py:155
+msgid "Məs: Orqanik sabun istehsalı"
+msgstr "Organic "
+
+#: contact/forms.py:159
+msgid "Məs: 1 il"
+msgstr ""
+
+#: contact/forms.py:163
+msgid "Məs: XXX MMC, XXX İctimai Birliyi"
+msgstr ""
+
+#: contact/forms.py:171
+msgid "Sayt"
+msgstr ""
+
+#: contact/forms.py:175
+#, fuzzy
+#| msgid "Telefon:"
+msgid "Telefon"
+msgstr "Phone:"
+
+#: contact/forms.py:179
+msgid "E-poçt"
+msgstr ""
+
 #: contact/templates/contact.html:7 contact/templates/membership.html:5
 msgid "Əlaqə | AOPE"
 msgstr "Contact | AOPE"
 
 #: contact/templates/contact.html:19 contact/templates/membership.html:19
 #: core/templates/emin-aliyev.html:20 core/templates/leadership.html:21
-#: core/templates/partners.html:20 news/templates/news.html:20
+#: core/templates/partners.html:20 news/templates/news-details.html:15
+#: news/templates/news.html:20
 msgid "Əsas Səhifə"
 msgstr "Homepage"
 
@@ -157,14 +232,6 @@ msgstr ""
 
 #: contact/templates/membership.html:145
 msgid "Bizə üzv olmaqda məqsəd və gözləntilərinizi qeyd edin."
-msgstr ""
-
-#: core/models.py:22
-msgid "Contact"
-msgstr ""
-
-#: core/models.py:23
-msgid "Contacts"
 msgstr ""
 
 #: core/templates/about.html:7
@@ -345,6 +412,7 @@ msgid "Haqqımızda"
 msgstr "About us"
 
 #: core/templates/includes/header.html:20 core/templates/index.html:68
+#: news/templates/news-details.html:16 news/templates/news-details.html:20
 #: news/templates/news.html:21 news/templates/news.html:24
 msgid "Xəbərlər"
 msgstr "News"
@@ -485,6 +553,6 @@ msgstr ""
 msgid "Assosiasiyalar"
 msgstr ""
 
-#: news/templates/news.html:5
+#: news/templates/news-details.html:5 news/templates/news.html:5
 msgid "Xəbərlər | AOPE"
 msgstr "News | AOPE"

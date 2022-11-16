@@ -1,6 +1,8 @@
 from django import forms
 from .models import Contact, Membership
+# from django.utils.translation import gettext as _
 from django.utils.translation import gettext as _
+
 from django.forms.widgets import DateInput
 
 
@@ -22,30 +24,30 @@ class ContactForm(forms.ModelForm):
         widgets = {
             'name': forms.TextInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'Ad Soyadınız',
+                                    'placeholder': _('Ad Soyadınız'),
                                     # 'id': 'value'
                                     
                                 }),
             'number': forms.TextInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'Telefon nömrəniz',
+                                    'placeholder': _('Telefon nömrəniz'),
                                     # 'id': 'value'
                                     
                                 }),
             'email': forms.EmailInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'Email ünvanınız',
+                                    'placeholder': _('Email ünvanınız'),
                                     # 'id': 'value1'
                                     
                                 }),
             'subject': forms.TextInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'Mövzu',
+                                    'placeholder': _('Mövzu'),
                                     # 'id': 'value2'
                                 }),
             'messege': forms.Textarea(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'Mesajınız',
+                                    'placeholder': _('Mesajınız'),
                                     'cols': "30", 
                                     'rows': "10"
                                     # 'id': 'value3'
@@ -114,67 +116,67 @@ class MembershipForm(forms.ModelForm):
 
             'passport_number': forms.TextInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'Məs: AZE12345678',
+                                    'placeholder': _('Məs: AZE12345678'),
                                 }),
 
             'passport_fin_number': forms.TextInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'Məs: 1234567',
+                                    'placeholder': _('Məs: 1234567'),
                                 }),
 
             'born': DateInput(attrs={'type': 'date'}),
 
             'place_of_birth': forms.TextInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'Məs: Azərbaycan, Bakı şəh.',
+                                    'placeholder': _('Məs: Azərbaycan, Bakı şəh.'),
                                 }),
 
             'actual_residence': forms.TextInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'Məs: Bakı şəh., Nərimanov ray.',
+                                    'placeholder': _('Məs: Bakı şəh., Nərimanov ray.'),
                                 }),
 
             'home_phone_number': forms.TextInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'Məs: (+994 12) 999 99 99',
+                                    'placeholder': _('Məs: (+994 12) 999 99 99'),
                                 }),
 
             'phone_number': forms.TextInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'Məs: (+994 51) 999 99 99',
+                                    'placeholder': _('Məs: (+994 51) 999 99 99'),
                                 }),
 
             'email': forms.EmailInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'Məs: example@example.com',
+                                    'placeholder': _('Məs: example@example.com'),
                                 }),
             'areas_of_activity': forms.TextInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'Məs: Orqanik sabun istehsalı',
+                                    'placeholder': _('Məs: Orqanik sabun istehsalı'),
                                 }),
             'work_time': forms.TextInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'Məs: 1 il',
+                                    'placeholder': _('Məs: 1 il'),
                                 }),
             'establishment': forms.TextInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'Məs: XXX MMC, XXX İctimai Birliyi',
+                                    'placeholder': _('Məs: XXX MMC, XXX İctimai Birliyi'),
                                 }),
             'adress': forms.TextInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'Məs: Bakı şəh., Nərimanov ray.',
+                                    'placeholder': _('Məs: Bakı şəh., Nərimanov ray.'),
                                 }),
             'facility_site': forms.TextInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'Sayt',
+                                    'placeholder': _('Sayt'),
                                 }),
             'facility_phone_number': forms.TextInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'Telefon',
+                                    'placeholder': _('Telefon'),
                                 }),
             'facility_mail': forms.EmailInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': 'E-poçt',
+                                    'placeholder': _('E-poçt'),
                                 }),
             'project': forms.Textarea(attrs={
                                     'class': 'form-group ',
