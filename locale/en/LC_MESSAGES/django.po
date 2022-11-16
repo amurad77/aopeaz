@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-16 05:08+0400\n"
+"POT-Creation-Date: 2022-11-16 20:02+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: aope/settings.py:130
+#: aope/settings.py:135
 msgid "Azerbaijan"
 msgstr ""
 
-#: aope/settings.py:131
+#: aope/settings.py:136
 msgid "English"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgstr ""
 
 #: contact/templates/contact.html:47
 msgid "Telefon:"
-msgstr ""
+msgstr "Phone"
 
 #: contact/templates/contact.html:71
 msgid "Xidmətlərimizlə maraqlandığınız üçün təşəkkür edirik!"
@@ -353,12 +353,22 @@ msgstr ""
 msgid "Partnyorlarımız"
 msgstr ""
 
+#: core/templates/index.html:8
+#, fuzzy
+#| msgid " Emin Əliyev | AOPE"
+msgid "Əsas Səhifə | AOPE"
+msgstr "Emin Aliyev"
+
 #: core/templates/index.html:30
 msgid "Kral Hüseyn 64B"
 msgstr ""
 
 #: core/templates/index.html:30
 msgid "Bakı, Azərbaycan"
+msgstr ""
+
+#: core/templates/leadership.html:7
+msgid "İdarə Heyəti | AOPE"
 msgstr ""
 
 #: core/templates/leadership.html:45 core/templates/leadership.html:57
@@ -448,7 +458,7 @@ msgstr ""
 
 #: core/templates/leadership.html:190
 msgid "Elmar Əlizadə"
-msgstr ""
+msgstr "Elmar Alizada"
 
 #: core/templates/partners.html:7
 msgid "Partners | AOPE"
@@ -477,8 +487,3 @@ msgstr ""
 #: news/templates/news.html:5
 msgid "Xəbərlər | AOPE"
 msgstr ""
-
-#, fuzzy
-#~| msgid " Emin Əliyev | AOPE"
-#~ msgid " Əlaqə | AOPE"
-#~ msgstr "Emin Aliyev"

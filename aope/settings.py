@@ -26,12 +26,17 @@ SECRET_KEY = 'django-insecure-wa!82n9+i$c(n7b@dbvz(g3$(3!$d(&5xt1kfh)@qpjyi0*teo
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+import django
+from django.utils.encoding import force_str
+django.utils.encoding.force_text = force_str
+from django.utils.translation import gettext_lazy as _
 
 # Application definition
+# TRANSLATABLE_MODEL_MODULES = ["app1.models", "app2.models", "fees.models", "menus.models"
 
 INSTALLED_APPS = [
     # 'translations',
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -125,13 +130,13 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'az'
 
-ugettext = lambda s: s
+gettext = lambda s: s
 LANGUAGES = (
-    ('az', ugettext('Azerbaijan')),
-    ('en', ugettext('English')),
+    ('az', gettext('Azerbaijan')),
+    ('en', gettext('English')),
 )
-# MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
-# MODELTRANSLATION_LANGUAGES = ('en', 'az')
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'az'
+MODELTRANSLATION_LANGUAGES = ('az', 'en')
 
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale')
