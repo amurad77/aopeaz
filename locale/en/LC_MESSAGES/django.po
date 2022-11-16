@@ -28,65 +28,66 @@ msgstr ""
 
 #: contact/templates/contact.html:7 contact/templates/membership.html:5
 msgid "Əlaqə | AOPE"
-msgstr ""
+msgstr "Contact | AOPE"
 
 #: contact/templates/contact.html:19 contact/templates/membership.html:19
 #: core/templates/emin-aliyev.html:20 core/templates/leadership.html:21
 #: core/templates/partners.html:20 news/templates/news.html:20
 msgid "Əsas Səhifə"
-msgstr ""
+msgstr "Homepage"
 
 #: contact/templates/contact.html:20 contact/templates/contact.html:23
 #: core/templates/includes/footer.html:15
 #: core/templates/includes/header.html:23 core/templates/index.html:71
 msgid "Əlaqə"
-msgstr ""
+msgstr "Contact"
 
 #: contact/templates/contact.html:40
 msgid "Ünvan:"
-msgstr ""
+msgstr "Address:"
 
 #: contact/templates/contact.html:41 core/templates/includes/footer.html:17
 msgid "Kral Hüseyn 64B, Bakı, Azərbaycan"
-msgstr ""
+msgstr "64B Kral Huseyn, Baku, Azerbaijan"
 
 #: contact/templates/contact.html:47
 msgid "Telefon:"
-msgstr "Phone"
+msgstr "Phone:"
 
 #: contact/templates/contact.html:71
 msgid "Xidmətlərimizlə maraqlandığınız üçün təşəkkür edirik!"
-msgstr ""
+msgstr "Thank you for your interest in our services!"
 
 #: contact/templates/contact.html:72
 msgid "Aşağıdakı formu dolduraraq bizə onlayn müraciət edə bilərsiniz."
-msgstr ""
+msgstr "You can contact us online by filling out the form below."
 
 #: contact/templates/contact.html:101 contact/templates/membership.html:149
 msgid "Göndər"
-msgstr ""
+msgstr "Send"
 
 #: contact/templates/membership.html:20 contact/templates/membership.html:23
 #: core/templates/includes/header.html:22 core/templates/index.html:70
 msgid "Üzvlük"
-msgstr ""
+msgstr "Membership"
 
 #: contact/templates/membership.html:30
 msgid ""
 "Aşağıdakı formu dolduraraq bizə üzvlük üçün onlayn müraciət edə bilərsiniz."
 msgstr ""
+"You can apply for membership to us online by filling out the form below."
 
 #: contact/templates/membership.html:39
 msgid "Ad:"
-msgstr ""
+msgstr "Name:"
 
 #: contact/templates/membership.html:45
 msgid "Soyad:"
-msgstr ""
+msgstr "Surname:"
 
 #: contact/templates/membership.html:50
 msgid "Ata adı:"
-msgstr ""
+msgstr "Father's name:"
 
 #: contact/templates/membership.html:64
 msgid "Şəxsiyyət vəsiqəsinin seriya və nömrəsi:"
@@ -168,15 +169,15 @@ msgstr ""
 
 #: core/templates/about.html:7
 msgid "Haqqımızda | AOPE"
-msgstr ""
+msgstr "About us | AOPE"
 
 #: core/templates/about.html:18
 msgid "HAQQIMIZDA"
-msgstr "about"
+msgstr "ABOUT"
 
 #: core/templates/about.html:23
 msgid "Missiyamız"
-msgstr ""
+msgstr "Our mission"
 
 #: core/templates/about.html:24 core/templates/about.html:28
 msgid ""
@@ -187,7 +188,7 @@ msgstr ""
 
 #: core/templates/about.html:27
 msgid "Vizyonumuz"
-msgstr ""
+msgstr "Our vision"
 
 #: core/templates/about.html:37
 msgid ""
@@ -248,25 +249,25 @@ msgstr ""
 #, fuzzy
 #| msgid " Emin Əliyev | AOPE"
 msgid "Emin Əliyev | AOPE"
-msgstr "Emin Aliyev"
+msgstr "Emin Aliyev | AOPE"
 
 #: core/templates/emin-aliyev.html:21 core/templates/includes/header.html:19
 #: core/templates/index.html:67 core/templates/leadership.html:22
 msgid "İdarə Heyəti"
-msgstr ""
+msgstr "Board Members"
 
 #: core/templates/emin-aliyev.html:22 core/templates/emin-aliyev.html:43
 #: core/templates/leadership.html:43
 msgid "Emin Əliyev"
-msgstr ""
+msgstr "Emin Aliyev"
 
 #: core/templates/emin-aliyev.html:25 core/templates/leadership.html:25
 msgid "Rəhbərlik"
-msgstr ""
+msgstr "Management"
 
 #: core/templates/emin-aliyev.html:44 core/templates/leadership.html:44
 msgid "İdarə Heyətinin sədri"
-msgstr ""
+msgstr "Chairman of the Board"
 
 #: core/templates/emin-aliyev.html:48
 msgid ""
@@ -329,64 +330,64 @@ msgstr ""
 
 #: core/templates/includes/footer.html:29
 msgid "2022 © Sayt"
-msgstr ""
+msgstr "2022 © The site"
 
 #: core/templates/includes/footer.html:29
 msgid "GUYS Digital Agency</a> tərəfindən hazırlanmışdır."
-msgstr ""
+msgstr "was developed by GUYS Digital Agency."
 
 #: core/templates/includes/header.html:17
 msgid "Ana Səhifə"
-msgstr ""
+msgstr "Homepage"
 
 #: core/templates/includes/header.html:18 core/templates/index.html:66
 msgid "Haqqımızda"
-msgstr ""
+msgstr "About us"
 
 #: core/templates/includes/header.html:20 core/templates/index.html:68
 #: news/templates/news.html:21 news/templates/news.html:24
 msgid "Xəbərlər"
-msgstr ""
+msgstr "News"
 
 #: core/templates/includes/header.html:21 core/templates/index.html:69
 #: core/templates/partners.html:21 core/templates/partners.html:24
 msgid "Partnyorlarımız"
-msgstr ""
+msgstr "Our partners"
 
 #: core/templates/index.html:8
 #, fuzzy
 #| msgid " Emin Əliyev | AOPE"
 msgid "Əsas Səhifə | AOPE"
-msgstr "Emin Aliyev"
+msgstr "Homepage | AOPE"
 
 #: core/templates/index.html:30
 msgid "Kral Hüseyn 64B"
-msgstr ""
+msgstr "64B Kral Huseyn"
 
 #: core/templates/index.html:30
 msgid "Bakı, Azərbaycan"
-msgstr ""
+msgstr "Baku, Azerbaijan"
 
 #: core/templates/leadership.html:7
 msgid "İdarə Heyəti | AOPE"
-msgstr ""
+msgstr "Board Members | AOPE"
 
 #: core/templates/leadership.html:45 core/templates/leadership.html:57
 #: core/templates/leadership.html:104 core/templates/leadership.html:145
 #: news/templates/news.html:46
 msgid "Daha ətraflı"
-msgstr "more"
+msgstr "More"
 
 #: core/templates/leadership.html:61 core/templates/leadership.html:76
 msgid "Elçin Əkbərov"
-msgstr ""
+msgstr "Elchin Akbarov"
 
 #: core/templates/leadership.html:62 core/templates/leadership.html:77
 #: core/templates/leadership.html:109 core/templates/leadership.html:124
 #: core/templates/leadership.html:150 core/templates/leadership.html:165
 #: core/templates/leadership.html:191
 msgid "İdarə heyəti üzvü"
-msgstr ""
+msgstr "Board member"
 
 #: core/templates/leadership.html:83
 msgid ""
@@ -422,7 +423,7 @@ msgstr ""
 
 #: core/templates/leadership.html:108 core/templates/leadership.html:123
 msgid "Sevda Qasımova"
-msgstr ""
+msgstr "Sevda Qasimova"
 
 #: core/templates/leadership.html:130
 msgid ""
@@ -437,7 +438,7 @@ msgstr ""
 
 #: core/templates/leadership.html:149 core/templates/leadership.html:164
 msgid "Ramil Əzməmmədov"
-msgstr ""
+msgstr "Ramil Azmammadov"
 
 #: core/templates/leadership.html:171
 msgid ""
@@ -461,12 +462,12 @@ msgid "Elmar Əlizadə"
 msgstr "Elmar Alizada"
 
 #: core/templates/partners.html:7
-msgid "Partners | AOPE"
-msgstr ""
+msgid "Partnyorlarımız | AOPE"
+msgstr "Partners | AOPE"
 
 #: core/templates/partners.html:31
 msgid "Dövlət qurumları"
-msgstr "Federation İnstitutions"
+msgstr ""
 
 #: core/templates/partners.html:47
 msgid "Beynəlxalq qurumlar"
@@ -486,4 +487,4 @@ msgstr ""
 
 #: news/templates/news.html:5
 msgid "Xəbərlər | AOPE"
-msgstr ""
+msgstr "News | AOPE"
