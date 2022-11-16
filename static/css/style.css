@@ -29,6 +29,15 @@ a {
     text-decoration: none;
 }
 
+button {
+    border: 0;
+    background-color: transparent;
+}
+.dropdown-menu {
+    position: relative;
+}
+
+
 .btn {
     font-size: 1.6rem;
     padding: 10px 15px;
