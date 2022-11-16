@@ -1,9 +1,11 @@
 
 
 {% extends "base.html" %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %} Əlaqə | AOPE{% endblock %}
+{% block title %}
+{% trans "Əlaqə | AOPE" %}
+{% endblock %}
 
 
 
@@ -14,11 +16,11 @@
                 <div class="container caption text-start">
                     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Əsas Səhifə</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Əlaqə</li>
+                            <li class="breadcrumb-item"><a href="index.html">{% trans "Əsas Səhifə" %}</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">{% trans "Əlaqə" %}</li>
                         </ol>
                     </nav>
-                    <h2>Əlaqə</h2>
+                    <h2>{% trans "Əlaqə" %}</h2>
                 </div>
             </div>
         </section>
@@ -35,14 +37,14 @@
                     <div class="col-12 col-md-6 col-xl-3 form-contact-news form-location text-center">
                         <i class="fa-solid fa-location-dot"></i>
                         <p>
-                            <strong>Ünvan:</strong><br>
-                            <span>Kral Hüseyn 64B, Bakı, Azərbaycan</span>
+                            <strong>{% trans "Ünvan:" %}</strong><br>
+                            <span>{% trans "Kral Hüseyn 64B, Bakı, Azərbaycan" %}</span>
                         </p>
                     </div>
                     <div class="col-12 col-md-6 col-xl-3 form-contact-news form-phone text-center">
                         <i class="fa-solid fa-phone"></i>
                         <p>
-                            <strong>Telefon:</strong><br>
+                            <strong>{% trans "Telefon:" %}</strong><br>
                             <span>(+994 12) 561 08 83</span><br>
                             <span>(+994 51) 394 33 95</span>
                         </p>
@@ -66,8 +68,8 @@
 
             <div class="contact mt-5 py-5">
                 <div class="contact-text">
-                    <p>Xidmətlərimizlə maraqlandığınız üçün təşəkkür edirik!</p>
-                    <h2>Aşağıdakı formu dolduraraq bizə onlayn müraciət edə bilərsiniz.</h2>
+                    <p>{% trans "Xidmətlərimizlə maraqlandığınız üçün təşəkkür edirik!" %}</p>
+                    <h2>{% trans "Aşağıdakı formu dolduraraq bizə onlayn müraciət edə bilərsiniz." %}</h2>
                 </div>
             </div>
 
@@ -96,7 +98,7 @@
                             {{form.messege}}
                             <!-- <textarea name="" id="" cols="30" rows="10" placeholder="Mesajınız"></textarea> -->
                         </div>
-                        <button type="submit" class="btn btn-green">Göndər</button>
+                        <button type="submit" class="btn btn-green">{% trans "Göndər" %}</button>
                         {% for message in messages %}
                         <p class="text-success">{{message}}</p>        
                         {% endfor %}

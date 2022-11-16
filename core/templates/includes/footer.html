@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %}
 
 
 <footer>
@@ -8,13 +8,13 @@
                 <div class="about-logo">
                     <img src="{% static 'img/logo/aope_logo_white.png' %}" alt="AOPE logo">
                 </div>
-                <p>Ekoloji Təmiz Məhsul İstehsalçıları və İxracatçıları İctimai Birliyi 21 iyun 2019-cu il tarixdə təsis edilmişdir. Azərbaycan Respublikası Ədliyyə Nazirliyinin müvafiq qərarı ilə 2 avqust 2019-cu ildə dövlət qeydiyyatına alınmışdır.</p>
+                <p>{% trans 'Ekoloji Təmiz Məhsul İstehsalçıları və İxracatçıları İctimai Birliyi 21 iyun 2019-cu il tarixdə təsis edilmişdir. Azərbaycan Respublikası Ədliyyə Nazirliyinin müvafiq qərarı ilə 2 avqust 2019-cu ildə dövlət qeydiyyatına alınmışdır.' %}</p>
             </div>
             <div class="col-12 col-lg-1"></div>
             <div class="col-12 col-lg-4">
-                <h3>Əlaqə</h3>
+                <h3>{% trans 'Əlaqə' %}</h3>
                 <ul>
-                    <li><span>&nbsp;<i class="fas fa-map-marker-alt"></i></span>&nbsp;&nbsp; Kral Hüseyn 64B, Bakı, Azərbaycan</li>
+                    <li><span>&nbsp;<i class="fas fa-map-marker-alt"></i></span>&nbsp;&nbsp; {% trans 'Kral Hüseyn 64B, Bakı, Azərbaycan' %}</li>
                     <li><span><i class="fas fa-phone-alt"></i></span>&nbsp;&nbsp;(+994 12) 561 08 83</li>
                     <li><span><i class="fas fa-phone-alt" style="visibility: hidden;"></i></span>&nbsp;&nbsp;(+994 51) 394 33 95</li>
                     <li><span><i class="fas fa-envelope"></i></span>&nbsp;&nbsp;coordinator@aope.az</li>
@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p class="m-0">2022 © Sayt <a href="#">GUYS Digital Agency</a> tərəfindən hazırlanmışdır.</p>
+            <p class="m-0">{% trans '2022 © Sayt' %}<a href="#">{% trans 'GUYS Digital Agency</a> tərəfindən hazırlanmışdır.' %}</p>
         </div>
     </div>
 </footer>

@@ -1,10 +1,10 @@
-{% load static %}
+{% load static i18n %}
 
 
 <header>
     <div class="container header">
         <div class="about-logo">
-            <a href="/index">
+            <a href="/">
                 <img src="{% static 'img/logo/aope_logo_white.png' %}" alt="Aope logo">
             </a>
         </div>
@@ -14,13 +14,13 @@
                     <i class="fa-sharp fa-solid fa-xmark"></i>
                 </div>
                 <ul class="nav-list">
-                    <li><a href="/index" class="nav_link">Ana Səhifə</a></li>
-                    <li><a href="/about" class="nav_link">Haqqımızda</a></li>
-                    <li><a href="/leadership" class="nav_link">İdarə Heyəti</a></li>
-                    <li><a href="/news" class="nav_link">Xəbərlər</a></li>
-                    <li><a href="/partners" class="nav_link">Partnyorlarımız</a></li>
-                    <li><a href="/membership" class="nav_link">Üzvlük</a></li>
-                    <li><a href="/contact" class="nav_link">Əlaqə</a></li>
+                    <li><a href="/" class="nav_link">{% trans 'Ana Səhifə' %} </a></li>
+                    <li><a href="/about" class="nav_link">{% trans 'Haqqımızda' %}</a></li>
+                    <li><a href="/leadership" class="nav_link">{% trans 'İdarə Heyəti' %}</a></li>
+                    <li><a href="/news" class="nav_link">{% trans 'Xəbərlər' %}</a></li>
+                    <li><a href="/partners" class="nav_link">{% trans 'Partnyorlarımız' %}</a></li>
+                    <li><a href="/membership" class="nav_link">{% trans 'Üzvlük' %}</a></li>
+                    <li><a href="/contact" class="nav_link">{% trans 'Əlaqə' %}</a></li>
                     <li><a href="" class="d-none d-lg-block nav_link"><img src="{% static 'img/icon/en.png' %}" alt="En" height="25"></a></li>
                 </ul>
             </nav>
@@ -29,7 +29,29 @@
             <a href="" class="d-block d-lg-none me-5"><img src="{% static 'img/icon/en.png' %}" alt="En" height="25"></a>
             <div class="menus" id="toggle-menu">
                 <i class="fa-solid fa-bars"></i>
+                
             </div>
+            
         </div>
+        <form action="{% url 'set_language' %}" method="post">
+            {% csrf_token %}
+            <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+            <ul class="nav navbar-nav navbar-right language menu">
+                {% get_current_language as LANGUAGE_CODE %}
+                {% get_available_languages as LANGUAGES %}
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% for language in languages %}
+                    
+                        <button type="submit"
+                                name="language"
+                                value="{{ language.code }}"
+                                class="{% if language.code == LANGUAGE_CODE %}alert-danger{% endif %}">
+                            {{ language.code }}
+                        </button>
+                 
+                {% endfor %}
+            </ul>
+        </form>
     </div>
+
 </header>

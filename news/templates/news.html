@@ -1,7 +1,9 @@
 {% extends "base.html" %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %} Xəbərlər | AOPE{% endblock %}
+{% block title %}
+{% trans "Xəbərlər | AOPE" %}
+{% endblock %}
 
 
 
@@ -15,11 +17,11 @@
                 <div class="container caption text-start">
                     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Əsas Səhifə</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Xəbərlər</li>
+                            <li class="breadcrumb-item"><a href="index.html">{% trans "Əsas Səhifə" %}</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">{% trans "Xəbərlər" %}</li>
                         </ol>
                     </nav>
-                    <h2>Xəbərlər</h2>
+                    <h2>{% trans "Xəbərlər" %}</h2>
                 </div>
             </div>
         </section>
@@ -38,10 +40,10 @@
                                 <div class="card-img-top" style="background-image: url({{i.image.url}});"></div>
                             </a>
                             <div class="card-body">
-                                <span>30 Avqust 2022</span>
+                                <span>{{ i.created_at }}</span>
                                 <a href="{{i.get_absolute_url}}"><h5 class="card-title">{{i.title}}</h5></a>
                                 <p class="card-text">{{i.description1}}</p>
-                                <a href="{{i.get_absolute_url}}" class="btn btn-green">Daha ətraflı</a>
+                                <a href="{{i.get_absolute_url}}" class="btn btn-green">{% trans "Daha ətraflı" %}</a>
                             </div>
                         </div>     
                     </div>

@@ -1,5 +1,10 @@
 from django.shortcuts import render
 from core.models import Partner
+# from django.utils.translation import gettext_lazy as _
+from django.utils.translation import gettext_lazy as _
+# from django.utils.translation import ugettext as _
+
+
 # Create your views here.
 
 

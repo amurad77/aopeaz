@@ -1,9 +1,11 @@
 
 
 {% extends "base.html" %}
-{% load static %}
+{% load static i18n%}
 
-{% block title %} Partners | AOPE{% endblock %}
+{% block title %}
+ {% trans "Partners | AOPE" %}
+{% endblock %}
 
 
 
@@ -15,18 +17,18 @@
                 <div class="container caption text-start">
                     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Əsas Səhifə</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Partnyorlarımız</li>
+                            <li class="breadcrumb-item"><a href="index.html">{% trans "Əsas Səhifə" %}</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">{% trans "Partnyorlarımız" %}</li>
                         </ol>
                     </nav>
-                    <h2>Partnyorlarımız</h2>
+                    <h2>{% trans "Partnyorlarımız" %}</h2>
                 </div>
             </div>
         </section>
 
         <section class="section mt-5">
             <div class="container">
-                <h3>Dövlət qurumları</h3>
+                <h3>{% trans "Dövlət qurumları" %}</h3>
                 <div class="line"></div>
                 <div class="row">
 
@@ -42,7 +44,7 @@
             </div>
 
             <div class="container">
-                <h3>Beynəlxalq qurumlar</h3>
+                <h3>{% trans "Beynəlxalq qurumlar" %}</h3>
                 <div class="line"></div>
                 <div class="row">
 
@@ -58,7 +60,7 @@
             </div>
 
             <div class="container">
-                <h3>Yerli şirkətlər</h3>
+                <h3>{% trans "Yerli şirkətlər" %}</h3>
                 <div class="line"></div>
                 <div class="row">
 
@@ -76,7 +78,7 @@
             </div>
 
             <div class="container">
-                <h3>Xarici şirkətlər</h3>
+                <h3>{% trans "Xarici şirkətlər" %}</h3>
                 <div class="line"></div>
                 <div class="row">
 
@@ -93,7 +95,7 @@
             </div>
 
             <div class="container">
-                <h3>Assosiasiyalar</h3>
+                <h3>{% trans "Assosiasiyalar" %}</h3>
                 <div class="line"></div>
                 <div class="row">
 

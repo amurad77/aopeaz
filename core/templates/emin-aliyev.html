@@ -1,9 +1,11 @@
 
 
 {% extends "base.html" %}
-{% load static %}
+{% load static i18n%}
 
-{% block title %} Emin Əliyev | AOPE{% endblock %}
+{% block title %}
+{% trans "Emin Əliyev | AOPE" %} 
+{% endblock %}
 
 
 
@@ -15,12 +17,12 @@
                 <div class="container caption text-start">
                     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Əsas Səhifə</a></li>
-                            <li class="breadcrumb-item"><a href="leadership.html">İdarə Heyəti</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Emin Əliyev</li>
+                            <li class="breadcrumb-item"><a href="index.html">{% trans "Əsas Səhifə" %}</a></li>
+                            <li class="breadcrumb-item"><a href="leadership.html">{% trans "İdarə Heyəti" %}</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">{% trans "Emin Əliyev" %}</li>
                         </ol>
                     </nav>
-                    <h2>Rəhbərlik</h2>
+                    <h2>{% trans "Rəhbərlik" %}</h2>
                 </div>
             </div>
         </section>
@@ -38,18 +40,18 @@
                         </div>
                     </div>
                     <div class="right-side col-12 col-md-3">
-                        <h3>Emin Əliyev</h3>
-                        <p>İdarə Heyətinin sədri</p>
+                        <h3>{% trans "Emin Əliyev" %}</h3>
+                        <p>{% trans "İdarə Heyətinin sədri" %}</p>
                     </div>
                     <div class="col-12">
                         <div class="more-details">
-                            <p>Emin Fazil oğlu Əliyev 18.06.1981-ci ildə Bakı şəhərində anadan olmuşdur. 1988-1998-ci illərdə Bakı şəhəri Nəsimi rayonu, İlqar Əbilhəsənov adına 42 saylı orta məktəbdə, 1998-2002-ci illərdə Bakı Dövlət Universitetinin Tarix fakültəsinin bakalavr, 2002-2004-cü illərdə isə magistraturasını fərqlənmə diplomu ilə bitirmişdir. 2004-2007-ci illər ərzində Azərbaycan Milli Elmlər Akademiyası A.A.Bakıxanov adına Tarix İnstitutunun əyani aspirantı olmuşdur. 2012-ci ildə Birləşmiş Ərəb Əmirliyində insan resurslarının idarə edilməsi, 2013 və 2018-ci illərdə Almaniya Federativ Respublikasında ümumi idarəetmə və aqrar layihələrin idarə edilməsi, 2017-ci ildə İsrail Dövlətində innovativ aqrar layihələrin idarə edilməsi, 2018-ci ildə Yaponiyada kiçik və orta biznesin idarə ediləsi, 2022-ci ildə ADA Universitetinin Menecment Kvalifikasiya kursunda strateji idarəetmə ilə bağlı təhsil almışdır.</p>
-                            <p>2004-2006 və 2012-2014-cü illərdə Bakı Dövlət Universiteti Tarix fakültəsinin, 2015-2017-ci illərdə Azərbaycan Turizm və Menecment Universitetinin Menecment kafedrasının müəllimi olmuşdur. 80-dən çox məqalənin və bir kitabın müəllifidir.</p>
-                            <p>2006-2016-cı illər ərzində müxtəlif dövlət, özəl və ictimai təşkilatlarda müxtəlif rəhbər vəzifələrdə çalışmışdır.</p>
-                            <p>2016-cı ildən sahibkarlıq fəaliyyəti ilə məşğul olmuşdur. Hal-hazırda beynəlxalq və yerli biznes layihələrin idarə edilməsi sahəsində fəaliyyət göstərir.</p>
-                            <p>2019-cu ilin 21 iyun tarixindən İctimai Birliyin ilk sədridir. 2021-ci ilin 18 iyununda ikinci dəfə İctimai Birliyi İdarə heyətinin sədri seçilmişdir.</p>
-                            <p>İngilis və rus dillərini sərbəst bilir.</p>
-                            <p>Ailəlidir, altı övladı var.</p>
+                            <p>{% trans "Emin Fazil oğlu Əliyev 18.06.1981-ci ildə Bakı şəhərində anadan olmuşdur. 1988-1998-ci illərdə Bakı şəhəri Nəsimi rayonu, İlqar Əbilhəsənov adına 42 saylı orta məktəbdə, 1998-2002-ci illərdə Bakı Dövlət Universitetinin Tarix fakültəsinin bakalavr, 2002-2004-cü illərdə isə magistraturasını fərqlənmə diplomu ilə bitirmişdir. 2004-2007-ci illər ərzində Azərbaycan Milli Elmlər Akademiyası A.A.Bakıxanov adına Tarix İnstitutunun əyani aspirantı olmuşdur. 2012-ci ildə Birləşmiş Ərəb Əmirliyində insan resurslarının idarə edilməsi, 2013 və 2018-ci illərdə Almaniya Federativ Respublikasında ümumi idarəetmə və aqrar layihələrin idarə edilməsi, 2017-ci ildə İsrail Dövlətində innovativ aqrar layihələrin idarə edilməsi, 2018-ci ildə Yaponiyada kiçik və orta biznesin idarə ediləsi, 2022-ci ildə ADA Universitetinin Menecment Kvalifikasiya kursunda strateji idarəetmə ilə bağlı təhsil almışdır." %}</p>
+                            <p>{% trans "2004-2006 və 2012-2014-cü illərdə Bakı Dövlət Universiteti Tarix fakültəsinin, 2015-2017-ci illərdə Azərbaycan Turizm və Menecment Universitetinin Menecment kafedrasının müəllimi olmuşdur. 80-dən çox məqalənin və bir kitabın müəllifidir." %}</p>
+                            <p>{% trans "2006-2016-cı illər ərzində müxtəlif dövlət, özəl və ictimai təşkilatlarda müxtəlif rəhbər vəzifələrdə çalışmışdır." %}</p>
+                            <p>{% trans "2016-cı ildən sahibkarlıq fəaliyyəti ilə məşğul olmuşdur. Hal-hazırda beynəlxalq və yerli biznes layihələrin idarə edilməsi sahəsində fəaliyyət göstərir." %}</p>
+                            <p>{% trans "2019-cu ilin 21 iyun tarixindən İctimai Birliyin ilk sədridir. 2021-ci ilin 18 iyununda ikinci dəfə İctimai Birliyi İdarə heyətinin sədri seçilmişdir." %}</p>
+                            <p>{% trans "İngilis və rus dillərini sərbəst bilir." %}</p>
+                            <p>{% trans "Ailəlidir, altı övladı var." %}</p>
                             <p><b>e.aliyev@aope.az</b></p>
                         </div>
                     </div>

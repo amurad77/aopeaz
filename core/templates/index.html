@@ -1,8 +1,12 @@
 
 {% extends "base.html" %}
-{% load static %}
 
-{% block title %}Əsas Səhifə | AOPE{% endblock %}
+
+{% load static i18n %}
+
+{% block title %}
+{% trans "Əsas Səhifə | AOPE" %} 
+{% endblock %}
 
 {% block css %} 
 <link rel="stylesheet" href="{% static 'css/none.css' %}">
@@ -14,6 +18,7 @@ id="homepage"
 
 {% block content %}
 
+
   <div class="container">
     <div class="logo-contact">
       <div class="logo">
@@ -22,7 +27,7 @@ id="homepage"
       <div class="contact">
         <div class="location">
           <span><i class="fa-solid fa-location-dot"></i></span>
-          <p>Kral Hüseyn 64B, <br>Bakı, Azərbaycan</p>
+          <p> {% trans "Kral Hüseyn 64B" %}<br>{% trans "Bakı, Azərbaycan" %}</p>
         </div>
         <div class="telephone">
           <span><i class="fas fa-phone-volume"></i></span>
@@ -58,12 +63,12 @@ id="homepage"
         </div>
         <div class="main-content col-12 col-lg-5">
           <ul>
-            <li><a href="/about"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp;Haqqımızda</a></li>
-            <li><a href="/leadership"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp;İdarə Heyəti</a></li>
-            <li><a href="/news"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp;Xəbərlər</a></li>
-            <li><a href="/partners"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp;Partnyorlarımız</a></li>
-            <li><a href="/membership"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp;Üzvlük</a></li>
-            <li><a href="/contact"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp;Əlaqə</a></li>
+            <li><a href="/about"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp; {% trans "Haqqımızda" %}</a></li>
+            <li><a href="/leadership"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp; {% trans "İdarə Heyəti" %}</a></li>
+            <li><a href="/news"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp; {% trans "Xəbərlər" %}</a></li>
+            <li><a href="/partners"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp; {% trans "Partnyorlarımız" %}</a></li>
+            <li><a href="/membership"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp; {% trans "Üzvlük" %}</a></li>
+            <li><a href="/contact"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp; {% trans "Əlaqə" %}</a></li>
           </ul>
         </div>
       </div>

@@ -1,28 +1,31 @@
 
 
 {% extends "base.html" %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %} Haqqımızda | AOPE{% endblock %}
+{% block title %} 
+{% trans 'Haqqımızda | AOPE' %}
+{% endblock %}
 
 
 
 {% block content %}
+
     <main>
         <div class="container">
             <div class="row mis-vis">
                 <div class="col-12 col-lg-5 d-flex align-items-center justify-content-center">
-                    <h3>HAQQIMIZDA</h3>
+                    <h3>{% trans 'HAQQIMIZDA' %}</h3>
                 </div>
                 <div class="col-12 col-lg-7">
                     <div class="our-mis-vis">
                         <div class="mission">
-                            <h4>Missiyamız</h4>
-                            <p>Our mission is to leverage our outstanding technologies and know-how to support researchers and manufacturers in realizing higher success rates, greater yields and reduced cost of goods when producing proteins.</p>
+                            <h4>{% trans 'Missiyamız' %}</h4>
+                            <p>{% trans 'Our mission is to leverage our outstanding technologies and know-how to support researchers and manufacturers in realizing higher success rates, greater yields and reduced cost of goods when producing proteins.' %}</p>
                         </div>
                         <div class="vision">
-                            <h4>Vizyonumuz</h4>
-                            <p>Our mission is to leverage our outstanding technologies and know-how to support researchers and manufacturers in realizing higher success rates, greater yields and reduced cost of goods when producing proteins.</p>
+                            <h4>{% trans 'Vizyonumuz' %}</h4>
+                            <p>{% trans 'Our mission is to leverage our outstanding technologies and know-how to support researchers and manufacturers in realizing higher success rates, greater yields and reduced cost of goods when producing proteins.' %}</p>
                         </div>
                     </div>
                 </div>
@@ -31,12 +34,12 @@
             <div class="about-info">
                 <div class="row">
                     <div class="col-12 col-lg-7">
-                        <p>Ekoloji Təmiz Məhsul İstehsalçıları və İxracatçıları İctimai Birliyi 21 iyun 2019-cu il tarixdə İqtisadiyyat Nazirliyinin dəstəyi ilə təsis edilmişdir. AOPE 2 avqust 2019-cu il tarixdə Azərbaycan Respublikası Ədliyyə Nazirliyi tərəfindən müvafiq qeydiyyata alınmışdır. İctimai Birliyin ingilis dilində adı "Association of Organic Producers and Exporters"dir.</p>
-                        <p>AOPE-nin əsas məqsədi Azərbaycanda ekoloji təmiz məhsulların yetişdirilməsi, emalı, istehsalının inkişafına və ixracına dəstək verməkdir. AOPE ekoloji təmiz məhsul istehsalını artırmaq məqsədi ilə ekoloji təmiz məhsul istehsalı sahəsində qabaqcıl ölkələrin nailiyyətlərini öyrənmək və ölkəmizdə bunu təşviq etmək üçün tədbirlər həyata keçirməkdir. Bu məqsədlə ilk tədbir 31.10.2019-cu ilə AZPROMO-nun dəstəyi ilə baş tutdu. Tədbirdə bir çox assosiasiya, dövlət qrumları və organik qida istehsalçıları yaxından iştirak etdilər. 18 dekabr tarixində AOPE-nin təşkilatçılığı ilə “Ölkəmizin orqanik məhsul istehsalı və ixracatı potensialı” mövzusunda daha böyük bir konfrans keçirildi. Konfransın gedişində Azərbaycan Arıçılar Assosiasiyası, Fındıq İstehsalçıları və İxracatçıları Assosiasiyası, Azərbaycan Meyvə-Tərəvəz İstehsalçıları və İxracatçıları Assosiasiyası, İstehlakçıların hüquqlarının müdafiəsi İctimai Birliyi ilə beştərəfli əməkdaşlıq memorandumu imzalandı. Birlik Azərbaycan Dövlət Aqrar Universiteti (ADAU) ilə də əməkdaşlıq memorandomu imzalamışdır əməkdaşlıq memorandumu əsasında ADAU-nun sonuncu kurs tələbələri təşkilatımızda istehsalat təcrübələri keçirlər. Bundan başqa, ADA Universitetinin tələbələri layihə idarəçiliyi sahəsində ictimai birliyimizdə praktiki kurs keçmişlər. İctimai Birliyimiz beynəlxalq orqanik təşkilat olan IFOAM-ın üzvüdür.</p>
-                        <p>Əsas məqsədimiz ənənəvi kənd təsərrüfatından orqanik kənd təsərrüfatına keçid dövrünün elementləri barədə fermerləri məlumatlandırmaqdır.</p>
-                        <p>AOPE-nin təşkilatçılığı ilə 2019-cu ilin 24 dekabr tarixində Ulu öndər Heydər Əliyevin “Hərəyə bir ağac əkək” çağrışına, habelə “Nəsimi ili” ilə bağlı 650 min ağac əkilməsi kampaniyasına dəstək olmaq məqsədi ilə 1000 ədəd Sakura ağacı Şamaxı şəhərində əkildi.</p>
-                        <p>2021-ci ilin aprel ayında isə Şəki şəhərində 3000 meyvə ağacından ibarət “Zəfər parkı” layihəsini icra etmişik. Zəngilan rayonu işğaldan azad edildik dən sonra rayona 200-ədək meyvə ağacı aparılmış və 2021-ci ilin mart ayında əkilmişdir.</p>
-                        <p>Qeyd edək ki, hər həftənin şənbə və bazar günlərində isə ödənişsiz olaraq gənclərə müxtəlif mövzularda(xüsusilə orqanik istehsalat və aqrar sahənin imkişafı istiqamətli) təlimlər verilməkdədir.</p>
+                        <p>{% trans 'Ekoloji Təmiz Məhsul İstehsalçıları və İxracatçıları İctimai Birliyi 21 iyun 2019-cu il tarixdə İqtisadiyyat Nazirliyinin dəstəyi ilə təsis edilmişdir. AOPE 2 avqust 2019-cu il tarixdə Azərbaycan Respublikası Ədliyyə Nazirliyi tərəfindən müvafiq qeydiyyata alınmışdır. İctimai Birliyin ingilis dilində adı "Association of Organic Producers and Exporters"dir.' %}</p>
+                        <p>{% trans 'AOPE-nin əsas məqsədi Azərbaycanda ekoloji təmiz məhsulların yetişdirilməsi, emalı, istehsalının inkişafına və ixracına dəstək verməkdir. AOPE ekoloji təmiz məhsul istehsalını artırmaq məqsədi ilə ekoloji təmiz məhsul istehsalı sahəsində qabaqcıl ölkələrin nailiyyətlərini öyrənmək və ölkəmizdə bunu təşviq etmək üçün tədbirlər həyata keçirməkdir. Bu məqsədlə ilk tədbir 31.10.2019-cu ilə AZPROMO-nun dəstəyi ilə baş tutdu. Tədbirdə bir çox assosiasiya, dövlət qrumları və organik qida istehsalçıları yaxından iştirak etdilər. 18 dekabr tarixində AOPE-nin təşkilatçılığı ilə “Ölkəmizin orqanik məhsul istehsalı və ixracatı potensialı” mövzusunda daha böyük bir konfrans keçirildi. Konfransın gedişində Azərbaycan Arıçılar Assosiasiyası, Fındıq İstehsalçıları və İxracatçıları Assosiasiyası, Azərbaycan Meyvə-Tərəvəz İstehsalçıları və İxracatçıları Assosiasiyası, İstehlakçıların hüquqlarının müdafiəsi İctimai Birliyi ilə beştərəfli əməkdaşlıq memorandumu imzalandı. Birlik Azərbaycan Dövlət Aqrar Universiteti (ADAU) ilə də əməkdaşlıq memorandomu imzalamışdır əməkdaşlıq memorandumu əsasında ADAU-nun sonuncu kurs tələbələri təşkilatımızda istehsalat təcrübələri keçirlər. Bundan başqa, ADA Universitetinin tələbələri layihə idarəçiliyi sahəsində ictimai birliyimizdə praktiki kurs keçmişlər. İctimai Birliyimiz beynəlxalq orqanik təşkilat olan IFOAM-ın üzvüdür.' %}</p>
+                        <p>{% trans 'Əsas məqsədimiz ənənəvi kənd təsərrüfatından orqanik kənd təsərrüfatına keçid dövrünün elementləri barədə fermerləri məlumatlandırmaqdır.</p>
+                        <p>{% trans 'AOPE-nin təşkilatçılığı ilə 2019-cu ilin 24 dekabr tarixində Ulu öndər Heydər Əliyevin “Hərəyə bir ağac əkək” çağrışına, habelə “Nəsimi ili” ilə bağlı 650 min ağac əkilməsi kampaniyasına dəstək olmaq məqsədi ilə 1000 ədəd Sakura ağacı Şamaxı şəhərində əkildi.' %}</p>
+                        <p>{% trans '2021-ci ilin aprel ayında isə Şəki şəhərində 3000 meyvə ağacından ibarət “Zəfər parkı” layihəsini icra etmişik. Zəngilan rayonu işğaldan azad edildik dən sonra rayona 200-ədək meyvə ağacı aparılmış və 2021-ci ilin mart ayında əkilmişdir.' %}</p>
+                        <p>{% trans 'Qeyd edək ki, hər həftənin şənbə və bazar günlərində isə ödənişsiz olaraq gənclərə müxtəlif mövzularda(xüsusilə orqanik istehsalat və aqrar sahənin imkişafı istiqamətli) təlimlər verilməkdədir.' %}</p>
                     </div>
                     <div class="col-12 col-lg-5">
                         <img src="{% static 'img/ifoam.jpg' %}" alt="About us">
