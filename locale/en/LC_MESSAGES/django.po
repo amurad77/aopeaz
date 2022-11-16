@@ -330,7 +330,7 @@ msgstr ""
 
 #: core/templates/includes/footer.html:29
 msgid "2022 © Sayt"
-msgstr "2022 © The site"
+msgstr "2022 © The site "
 
 #: core/templates/includes/footer.html:29
 msgid "GUYS Digital Agency</a> tərəfindən hazırlanmışdır."
