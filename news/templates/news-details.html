@@ -30,7 +30,7 @@
                             <img src="{{ news.image.url }}" alt="{{news.title}}">
                         </div>
                         <h3 class="mt-5 pb-3">{{news.title}}</h3>
-                        <span>{{news.created_at}}</span>
+                        <span>{{news.created_at|date:"F d, Y"}}</span>
                         <div class="line mt-4"></div>
                         <div class="single-blog-content">
                             {% if news.description1 %}
@@ -73,6 +73,10 @@
                             {% if news.image5 %}
                             <img src="{{ news.image5.url }}" alt="News image 5">
                             {% endif %}
+
+                            {% if news.pdf %}
+                            <a href="{{ news.pdf.url }}">{{news.pdf_title}}</a>
+                            {% endif %}
                         </div>
                     </div>
 
@@ -87,7 +91,7 @@
                                 <a href="{{i.get_absolute_url}}">
                                     <div class="box-img" style="background-image: url('{{i.image.url}}');"></div>
                                 </a>
-                                <span>{{i.created_at}}</span>
+                                <span>{{i.created_at|date:"F d, Y"}}</span>
                                 <a href="{{i.get_absolute_url}}"><h5>{{i.title}}</h5></a>
                             </div>
 
