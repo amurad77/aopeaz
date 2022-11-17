@@ -44,7 +44,7 @@ msgstr "Subject"
 
 #: contact/forms.py:50
 msgid "Mesajınız"
-msgstr "Message"
+msgstr "Your message"
 
 #: contact/forms.py:62 contact/models.py:26
 msgid "Kişi"
@@ -56,57 +56,55 @@ msgstr "Female"
 
 #: contact/forms.py:119
 msgid "Məs: AZE12345678"
-msgstr ""
+msgstr "E.g. AZE12345678"
 
 #: contact/forms.py:124
 msgid "Məs: 1234567"
-msgstr ""
+msgstr "E.g. 1234567"
 
 #: contact/forms.py:131
 msgid "Məs: Azərbaycan, Bakı şəh."
-msgstr ""
+msgstr "E.g. Azerbaijan, Baku"
 
 #: contact/forms.py:136 contact/forms.py:167
 msgid "Məs: Bakı şəh., Nərimanov ray."
-msgstr ""
+msgstr "E.g. Baku, Narimanov"
 
 #: contact/forms.py:141
 msgid "Məs: (+994 12) 999 99 99"
-msgstr ""
+msgstr "E.g. (+994 12) 999 99 99"
 
 #: contact/forms.py:146
 msgid "Məs: (+994 51) 999 99 99"
-msgstr ""
+msgstr "E.g. (+994 51) 999 99 99"
 
 #: contact/forms.py:151
 msgid "Məs: example@example.com"
-msgstr ""
+msgstr "E.g. example@example.com"
 
 #: contact/forms.py:155
 msgid "Məs: Orqanik sabun istehsalı"
-msgstr "Organic "
+msgstr "E.g. Organic soap production"
 
 #: contact/forms.py:159
 msgid "Məs: 1 il"
-msgstr ""
+msgstr "E.g. 1 year"
 
 #: contact/forms.py:163
 msgid "Məs: XXX MMC, XXX İctimai Birliyi"
-msgstr ""
+msgstr "E.g. XXX LLC, XXX Public Union"
 
 #: contact/forms.py:171
 msgid "Sayt"
-msgstr ""
+msgstr "Website"
 
 #: contact/forms.py:175
-#, fuzzy
-#| msgid "Telefon:"
 msgid "Telefon"
-msgstr "Phone:"
+msgstr "Phone"
 
 #: contact/forms.py:179
 msgid "E-poçt"
-msgstr ""
+msgstr "Email"
 
 #: contact/templates/contact.html:7 contact/templates/membership.html:5
 msgid "Əlaqə | AOPE"
@@ -244,7 +242,7 @@ msgstr ""
 
 #: core/templates/about.html:7
 msgid "Haqqımızda | AOPE"
-msgstr "About us | AOPE"
+msgstr "About Us | AOPE"
 
 #: core/templates/about.html:18
 msgid "HAQQIMIZDA"
@@ -321,8 +319,6 @@ msgid ""
 msgstr ""
 
 #: core/templates/emin-aliyev.html:7
-#, fuzzy
-#| msgid " Emin Əliyev | AOPE"
 msgid "Emin Əliyev | AOPE"
 msgstr "Emin Aliyev | AOPE"
 
@@ -417,7 +413,7 @@ msgstr "Homepage"
 
 #: core/templates/includes/header.html:18 core/templates/index.html:66
 msgid "Haqqımızda"
-msgstr "About us"
+msgstr "About Us"
 
 #: core/templates/includes/header.html:20 core/templates/index.html:68
 #: news/templates/news-details.html:17 news/templates/news-details.html:21
@@ -428,11 +424,9 @@ msgstr "News"
 #: core/templates/includes/header.html:21 core/templates/index.html:69
 #: core/templates/partners.html:21 core/templates/partners.html:24
 msgid "Partnyorlarımız"
-msgstr "Our partners"
+msgstr "Our Partners"
 
 #: core/templates/index.html:8
-#, fuzzy
-#| msgid " Emin Əliyev | AOPE"
 msgid "Əsas Səhifə | AOPE"
 msgstr "Homepage | AOPE"
 
@@ -568,4 +562,3 @@ msgstr "News | AOPE"
 #: news/templates/news-details.html:88
 msgid "Digər Xəbərlər"
 msgstr "Other News"
-
