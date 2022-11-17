@@ -13,7 +13,6 @@
                     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="/">{% trans "Əsas Səhifə" %}</a></li>
-
                             <li class="breadcrumb-item"><a href="/news">{% trans "Xəbərlər" %}</a></li>
                             <li class="breadcrumb-item active" aria-current="page">{{news.title}}</li>
                         </ol>
@@ -26,7 +25,7 @@
         <section class="section news-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-8 single-blog">
+                    <div class="col-12 col-md-8 single-blog text-center">
                         <div class="blog-title-img">
                             <img src="{{ news.image.url }}" alt="{{news.title}}">
                         </div>
@@ -54,12 +53,15 @@
                             <p>{{news.description5}}</p>
                             {% endif %}
 
+                            {% if news.pdf %}
+                            <p class="read-more-pdf my-5"><b>Link:</b> <a href="{{ news.pdf.url }}">{{news.pdf_title}}</a></p>
+                            {% endif %}
+
                             {% if news.image1 %}
                             <img src="{{ news.image1.url }}" alt="News image 1">
                             {% endif %}
 
                             {% if news.image2 %}
-                            <!-- -------------------------------- -->
                             <img src="{{ news.image2.url }}" alt="News image 2">
                             {% endif %}
 
@@ -74,17 +76,11 @@
                             {% if news.image5 %}
                             <img src="{{ news.image5.url }}" alt="News image 5">
                             {% endif %}
-
-                            {% if news.pdf %}
-                            <a href="{{ news.pdf.url }}">{{news.pdf_title}}</a>
-                            {% endif %}
                         </div>
                     </div>
 
                     <div class="col-12 col-md-4">
                         <div class="sidebar text-start">
-                            <!-- <li class="breadcrumb-item"><a href="/"></a></li> -->
-                            
                             <h4>{% trans "Digər Xəbərlər" %}</h4>
                             <div class="line"></div>
 
