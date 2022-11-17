@@ -1,13 +1,9 @@
-
-
 {% extends "base.html" %}
 {% load static i18n%}
 
 {% block title %}
- {% trans "Partnyorlarımız | AOPE" %}
+{% trans "Partnyorlarımız | AOPE" %}
 {% endblock %}
-
-
 
 {% block content %}
 
@@ -31,15 +27,108 @@
                 <h3>{% trans "Dövlət qurumları" %}</h3>
                 <div class="line"></div>
                 <div class="row">
-
-                    {% for i in partner_dovlet %}
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
                         <div class="card mb-3 p-3">
-                            <div style="margin: 0 35px; background-image:  url( {{i.logo.url}} );"></div>
+                            <div style="margin: 0 35px; background-image: url({% static 'img/partners/ar-eco.svg' %});"></div>
                         </div>
-                        <h4>{{ i.name }}</h4>
+                        <h4>{% trans 'AR Ekologiya və Təbii Sərvətlər Nazirliyi' %}</h4>
                     </div>
-                    {% endfor %}
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3" style="background-color: #43b543;">
+                            <div style="margin: 0 40px; background-image: url({% static 'img/partners/arktn.svg' %});"></div>
+                        </div>
+                        <h4>{% trans 'AR Kənd Təsərrüfatı Nazirliyi' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="margin: 0 35px; background-image: url({% static 'img/partners/arin.png' %});"></div>
+                        </div>
+                        <h4>{% trans 'AR İqtisadiyyat Nazirliyi' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/ar-sosial.png' %});"></div>
+                        </div>
+                        <h4>{% trans 'AR Əmək və Əhalinin Sosial Müdafiəsi Nazirliyi' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3" style="background-color: #6b911b;">
+                            <div style="margin: 0 35px; background-image: url({% static 'img/partners/adau.png' %});"></div>
+                        </div>
+                        <h4>{% trans 'Azərbaycan Dövlət Aqrar Universiteti' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="margin: 0 20px; background-image: url({% static 'img/partners/ada.png' %});"></div>
+                        </div>
+                        <h4>{% trans 'ADA Universiteti' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/teti.png' %});"></div>
+                        </div>
+                        <h4>{% trans 'Tərəvəzçilik Elmi-Tədqiqat İnstitutu' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/kobia.svg' %});"></div>
+                        </div>
+                        <h4>{% trans 'KOBİA' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="margin: 0 35px; background-image: url({% static 'img/partners/e-qrant.png' %});"></div>
+                        </div>
+                        <h4>{% trans 'Qeyri-Hökumət Təşkilatlarına Dövlət Dəstəyi Agentliyi' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="margin: 0 45px; background-image: url({% static 'img/partners/gerb.svg' %});"></div>
+                        </div>
+                        <h4>{% trans 'AR Prezidentinin Şərqi Zəngəzur iqtisadi rayonuna daxil olan Zəngilan rayonu üzrə xüsusi nümayəndəliyi' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="margin: 0 45px; background-image: url({% static 'img/partners/gerb.svg' %});"></div>
+                        </div>
+                        <h4>{% trans 'Zəngilan rayon icra hakimiyyəti' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="margin: 0 45px; background-image: url({% static 'img/partners/gerb.svg' %});"></div>
+                        </div>
+                        <h4>{% trans 'Biləsuvar rayon icra hakimiyyəti' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="margin: 0 45px; background-image: url({% static 'img/partners/gerb.svg' %});"></div>
+                        </div>
+                        <h4>{% trans 'Kürdəmir rayon icra hakimiyyəti' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="margin: 0 45px; background-image: url({% static 'img/partners/gerb.svg' %});"></div>
+                        </div>
+                        <h4>{% trans 'Şəki rayon icra hakimiyyəti' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="margin: 0 45px; background-image: url({% static 'img/partners/gerb.svg' %});"></div>
+                        </div>
+                        <h4>{% trans 'Şamaxı rayon icra hakimiyyəti' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="margin: 0 45px; background-image: url({% static 'img/partners/gerb.svg' %});"></div>
+                        </div>
+                        <h4>{% trans 'Cəlilabad rayon icra hakimiyyəti' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="margin: 0 45px; background-image: url({% static 'img/partners/gerb.svg' %});"></div>
+                        </div>
+                        <h4>{% trans 'Masallı rayon icra hakimiyyəti' %}</h4>
+                    </div>
                 </div>
             </div>
 
@@ -47,15 +136,36 @@
                 <h3>{% trans "Beynəlxalq qurumlar" %}</h3>
                 <div class="line"></div>
                 <div class="row">
-
-                    {% for i in partner_beynelxalq %}
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
                         <div class="card mb-3 p-3">
-                            <div style="margin: 0 35px; background-image:  url( {{i.logo.url}} );"></div>
+                            <div style="margin: 0 35px; background-image: url({% static 'img/partners/fao.png' %});"></div>
                         </div>
-                        <h4>{{ i.name }}</h4>
+                        <h4>{% trans 'BMT-nin Ərzaq və Kənd Təsərrüfatı Təşkilatı' %}</h4>
                     </div>
-                    {% endfor %}
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/giz.png' %});"></div>
+                        </div>
+                        <h4>{% trans 'GIZ' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="margin: 0 35px; background-image: url({% static 'img/partners/usaid.svg' %});"></div>
+                        </div>
+                        <h4>{% trans 'USAID' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/ahk.jpg' %});"></div>
+                        </div>
+                        <h4>{% trans 'AHK' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/undp.jpg' %});"></div>
+                        </div>
+                        <h4>{% trans 'UNDP Azerbaijan' %}</h4>
+                    </div>
                 </div>
             </div>
 
@@ -63,17 +173,42 @@
                 <h3>{% trans "Yerli şirkətlər" %}</h3>
                 <div class="line"></div>
                 <div class="row">
-
-
-                    {% for i in partner_yerli %}
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
                         <div class="card mb-3 p-3">
-                            <div style="margin: 0 35px; background-image:  url( {{i.logo.url}} );"></div>
+                            <div style="background-image: url({% static 'img/partners/aqrokimya.svg' %});"></div>
                         </div>
-                        <h4>{{ i.name }}</h4>
+                        <h4>{% trans 'Aqrokimya ASC' %}</h4>
                     </div>
-                    {% endfor %}
-
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/amoris.png' %});"></div>
+                        </div>
+                        <h4>{% trans 'Amoris MMC' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/asagro.png' %});"></div>
+                        </div>
+                        <h4>{% trans '"AS Agro Co." LLC' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/growgroup.png' %});"></div>
+                        </div>
+                        <h4>{% trans 'Grow Group Azerbaijan' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/yalama.png' %});"></div>
+                        </div>
+                        <h4>{% trans 'Yalama Aqropark MMC' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3" style="background-color: #60bd74;">
+                            <div style="background-image: url({% static 'img/partners/saf-qida.png' %});"></div>
+                        </div>
+                        <h4>{% trans 'Saf Qida Mağazalar Şəbəkəsi' %}</h4>
+                    </div>
                 </div>
             </div>
 
@@ -81,16 +216,66 @@
                 <h3>{% trans "Xarici şirkətlər" %}</h3>
                 <div class="line"></div>
                 <div class="row">
-
-                    {% for i in partner_xarici %}
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
                         <div class="card mb-3 p-3">
-                            <div style="margin: 0 35px; background-image:  url( {{i.logo.url}} );"></div>
+                            <div style="background-image: url({% static 'img/partners/profiline.jpg' %});"></div>
                         </div>
-                        <h4>{{ i.name }}</h4>
+                        <h4>{% trans 'Profiline Greenhouse Ltd' %}</h4>
                     </div>
-                    {% endfor %}
-
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/naandanjain.png' %});"></div>
+                        </div>
+                        <h4>{% trans 'NaanDanJain Irrigation Ltd' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/appleworld.jpg' %});"></div>
+                        </div>
+                        <h4>{% trans 'Apple World' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/qorenishi.jpg' %});"></div>
+                        </div>
+                        <h4>{% trans 'Qorenishi' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/arshi-somon.jpg' %});"></div>
+                        </div>
+                        <h4>{% trans 'Arshi Somon' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/techsystems.png' %});"></div>
+                        </div>
+                        <h4>{% trans 'Techsystems' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/dragan.png' %});"></div>
+                        </div>
+                        <h4>{% trans 'Dragan' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/nevateam.png' %});"></div>
+                        </div>
+                        <h4>{% trans 'Neva-Team' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/biofach.jpeg' %});"></div>
+                        </div>
+                        <h4>{% trans 'Biofach' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/ifoam.webp' %});"></div>
+                        </div>
+                        <h4>{% trans 'IFOAM' %}</h4>
+                    </div>
                 </div>
             </div>
 
@@ -98,21 +283,51 @@
                 <h3>{% trans "Assosiasiyalar" %}</h3>
                 <div class="line"></div>
                 <div class="row">
-
-                    {% for i in partner_assosiasiyalar %}
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
                         <div class="card mb-3 p-3">
-                            <div style="margin: 0 35px; background-image:  url( {{i.logo.url}} );"></div>
+                            <div style="background-image: url({% static 'img/partners/amta.jpg' %});"></div>
                         </div>
-                        <h4>{{ i.name }}</h4>
+                        <h4>{% trans 'Azərbaycan Meyvə-Tərəvəz İstehsalçıları və İxracatçıları Assosiasiyası' %}</h4>
                     </div>
-                    {% endfor %}
-
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3" style="background-color: #228c22;">
+                            <div style="background-image: url({% static 'img/partners/ahec.png' %});"></div>
+                        </div>
+                        <h4>{% trans 'Azərbaycan Fındıq İxracatçıları Assosiasiyası' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/aniia.svg' %});"></div>
+                        </div>
+                        <h4>{% trans 'Azərbaycan Nar İstehsalçıları və İxracatçıları Assosiasiyası' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/gaba.png' %});"></div>
+                        </div>
+                        <h4>{% trans 'Gəncə Aqrobiznes Assosiasiyası' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/axiia.png' %});"></div>
+                        </div>
+                        <h4>{% trans 'Azərbaycanda Xurma İstehsalçıları və İxracatçıları Assosiasiyası' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/aaa.jpg' %});"></div>
+                        </div>
+                        <h4>{% trans 'Azərbaycan Arıçılar Assosiasiyası' %}</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div class="card mb-3 p-3">
+                            <div style="background-image: url({% static 'img/partners/' %});"></div>
+                        </div>
+                        <h4>{% trans 'İstehlakçıların hüquqlarının müdafiəsi İctimai Birliyi' %}</h4>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-   
 {% endblock %}
-
