@@ -1,7 +1,7 @@
 from django import forms
 from .models import Contact, Membership
 # from django.utils.translation import gettext as _
-from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy as _
 
 from django.forms.widgets import DateInput
 
@@ -24,7 +24,7 @@ class ContactForm(forms.ModelForm):
         widgets = {
             'name': forms.TextInput(attrs={
                                     'class': 'form-group ',
-                                    'placeholder': _('Ad Soyadınız'),
+                                    'placeholder':_('Ad Soyadınız'),
                                     # 'id': 'value'
                                     
                                 }),
@@ -59,8 +59,8 @@ class MembershipForm(forms.ModelForm):
 
     class Meta:
         GENDER_CHOICES = (
-        ('M', 'Kişi'),
-        ('F', 'Qadın')
+        ('M', _('Kişi')),
+        ('F', _('Qadın'))
     )
         model = Membership
         fields = (

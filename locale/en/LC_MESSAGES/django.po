@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-17 18:38+0400\n"
+"POT-Creation-Date: 2022-11-17 22:24+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,25 +26,33 @@ msgstr ""
 msgid "English"
 msgstr ""
 
-#: contact/forms.py:27
+#: contact/forms.py:27 contact/templates/contact.html:22
 msgid "Ad Soyadınız"
 msgstr "Name and Surname"
 
 #: contact/forms.py:33
 msgid "Telefon nömrəniz"
-msgstr "Telefon eng"
+msgstr "Phone number"
 
 #: contact/forms.py:39
 msgid "Email ünvanınız"
-msgstr "Mail eng"
+msgstr "Email address"
 
 #: contact/forms.py:45
 msgid "Mövzu"
-msgstr "Movzu eng"
+msgstr "Subject"
 
 #: contact/forms.py:50
 msgid "Mesajınız"
-msgstr "Mesajınız eng"
+msgstr "Message"
+
+#: contact/forms.py:62 contact/models.py:26
+msgid "Kişi"
+msgstr "Male"
+
+#: contact/forms.py:63 contact/models.py:27
+msgid "Qadın"
+msgstr "Female"
 
 #: contact/forms.py:119
 msgid "Məs: AZE12345678"
@@ -104,40 +112,40 @@ msgstr ""
 msgid "Əlaqə | AOPE"
 msgstr "Contact | AOPE"
 
-#: contact/templates/contact.html:19 contact/templates/membership.html:19
+#: contact/templates/contact.html:21 contact/templates/membership.html:19
 #: core/templates/emin-aliyev.html:20 core/templates/leadership.html:21
 #: core/templates/partners.html:20 news/templates/news-details.html:15
 #: news/templates/news.html:20
 msgid "Əsas Səhifə"
 msgstr "Homepage"
 
-#: contact/templates/contact.html:20 contact/templates/contact.html:23
+#: contact/templates/contact.html:24 contact/templates/contact.html:27
 #: core/templates/includes/footer.html:15
 #: core/templates/includes/header.html:23 core/templates/index.html:71
 msgid "Əlaqə"
 msgstr "Contact"
 
-#: contact/templates/contact.html:40
+#: contact/templates/contact.html:44
 msgid "Ünvan:"
 msgstr "Address:"
 
-#: contact/templates/contact.html:41 core/templates/includes/footer.html:17
+#: contact/templates/contact.html:45 core/templates/includes/footer.html:17
 msgid "Kral Hüseyn 64B, Bakı, Azərbaycan"
 msgstr "64B Kral Huseyn, Baku, Azerbaijan"
 
-#: contact/templates/contact.html:47
+#: contact/templates/contact.html:51
 msgid "Telefon:"
 msgstr "Phone:"
 
-#: contact/templates/contact.html:71
+#: contact/templates/contact.html:75
 msgid "Xidmətlərimizlə maraqlandığınız üçün təşəkkür edirik!"
 msgstr "Thank you for your interest in our services!"
 
-#: contact/templates/contact.html:72
+#: contact/templates/contact.html:76
 msgid "Aşağıdakı formu dolduraraq bizə onlayn müraciət edə bilərsiniz."
 msgstr "You can contact us online by filling out the form below."
 
-#: contact/templates/contact.html:101 contact/templates/membership.html:149
+#: contact/templates/contact.html:105 contact/templates/membership.html:149
 msgid "Göndər"
 msgstr "Send"
 
@@ -412,7 +420,7 @@ msgid "Haqqımızda"
 msgstr "About us"
 
 #: core/templates/includes/header.html:20 core/templates/index.html:68
-#: news/templates/news-details.html:16 news/templates/news-details.html:20
+#: news/templates/news-details.html:17 news/templates/news-details.html:21
 #: news/templates/news.html:21 news/templates/news.html:24
 msgid "Xəbərlər"
 msgstr "News"
@@ -556,3 +564,8 @@ msgstr ""
 #: news/templates/news-details.html:5 news/templates/news.html:5
 msgid "Xəbərlər | AOPE"
 msgstr "News | AOPE"
+
+#: news/templates/news-details.html:88
+msgid "Digər Xəbərlər"
+msgstr "Other News"
+

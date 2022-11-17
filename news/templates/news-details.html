@@ -13,6 +13,7 @@
                     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="/">{% trans "Əsas Səhifə" %}</a></li>
+
                             <li class="breadcrumb-item"><a href="/news">{% trans "Xəbərlər" %}</a></li>
                             <li class="breadcrumb-item active" aria-current="page">{{news.title}}</li>
                         </ol>
@@ -82,7 +83,9 @@
 
                     <div class="col-12 col-md-4">
                         <div class="sidebar text-start">
-                            <h4>Digər xəbərlər</h4>
+                            <!-- <li class="breadcrumb-item"><a href="/"></a></li> -->
+                            
+                            <h4>{% trans "Digər Xəbərlər" %}</h4>
                             <div class="line"></div>
 
                             {% for i in related_news %}

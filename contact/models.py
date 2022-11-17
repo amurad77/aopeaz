@@ -1,5 +1,7 @@
 from django.db import models
 from random import choices
+from django.utils.translation import gettext_lazy as _
+
 
 
 # Create your models here.
@@ -21,8 +23,8 @@ class Contact(models.Model):
 
 class Membership(models.Model):
     GENDER_CHOICES = (
-    ('M', 'Kişi'),
-    ('F', 'Qadın')
+        ('M', _('Kişi')),
+        ('F', _('Qadın'))
     )
     # information
     name = models.CharField('Ad', max_length = 256)
