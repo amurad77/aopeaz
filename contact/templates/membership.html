@@ -5,11 +5,7 @@
 {% trans "Əlaqə | AOPE" %}
 {% endblock %}
 
-
-
 {% block content %}
-
-
     <main>
         <section class="banner single-page-banner">
             <div class="banner-bg">
@@ -39,7 +35,6 @@
                                 <label for="name">{% trans "Ad:" %}</label>
                                 <!-- <input type="text" id=""> -->
                                 {{form.name}}
-
                             </div>
                             <div>
                                 <label for="name">{% trans "Soyad:" %}</label>
@@ -53,7 +48,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="name">Cins:</label>
+                            <label for="name">{% trans "Cins:" %}</label>
                             <div>
                                 {{form.gender}}
                                 <!-- <input type="radio" name="gender" id="male"><label for="male" class="radio-label">Kişi</label>

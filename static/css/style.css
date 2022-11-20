@@ -71,7 +71,7 @@ input[type='radio']:after {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    top: -2px;
+    top: -4px;
     left: -1px;
     position: relative;
     background-color: var(--white);
@@ -84,7 +84,7 @@ input[type='radio']:checked:after {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    top: -2px;
+    top: -4px;
     left: -1px;
     position: relative;
     background-color: var(--opacgreen);
@@ -984,4 +984,27 @@ footer .copyright a {
 .membership-form .form-group-3 > div:not(:last-child),
 .membership-form .form-group-3 > input:not(:last-child) {
     margin-right: 20px;
+}
+#id_gender > div {
+    display: inline-block;
+    width: max-content !important;
+    margin-right: 30px;
+}
+
+@media (max-width: 992px) {
+    .membership-form .form-group-3 {
+        display: block;
+    }
+    .form-group div {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .membership-form {
+        width: 90%;
+    }
+    .membership-form-image {
+        width: 100%;
+        display: flex;
+    }
 }
