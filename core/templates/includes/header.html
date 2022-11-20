@@ -28,8 +28,8 @@
             {% csrf_token %}
             <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
             <div class="dropdown">
-                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="/static/img/icon/{{ LANGUAGE_CODE }}.png" alt="{{ LANGUAGE_CODE }}" height="25">
+                <button class="dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="/static/img/icon/{{ LANGUAGE_CODE }}.png" alt="{{ LANGUAGE_CODE }}" height="25"><span>{{ LANGUAGE_CODE }}</span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     {% get_current_language as LANGUAGE_CODE %}
@@ -38,17 +38,14 @@
                     {% for language in languages %}
                         {% if language.code != LANGUAGE_CODE %}
                             <button type="submit" name="language" value="{{ language.code }}">
-                                <div>
-                                    <img src="/static/img/icon/{{ language.code }}.png" alt="{{ language.code }}" height="25">
-                                </div>
+                                <img src="/static/img/icon/{{ language.code }}.png" alt="{{ language.code }}" height="25"><span>{{ language.code }}</span>
                             </button>
                         {% endif %}
                     {% endfor %}
                 </ul>
             </div>
         </form>
-        <div class="d-block d-lg-none d-flex">
-            <a href="" class="d-block d-lg-none me-5"><img src="{% static 'img/icon/en.png' %}" alt="En" height="25"></a>
+        <div class="d-block d-xl-none d-flex">
             <div class="menus" id="toggle-menu">
                 <i class="fa-solid fa-bars"></i>
             </div>

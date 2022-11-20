@@ -114,8 +114,8 @@ msgstr "Contact | AOPE"
 #: core/templates/emin-aliyev.html:20 core/templates/leadership.html:21
 #: core/templates/partners.html:20 news/templates/news-details.html:15
 #: news/templates/news.html:20
-msgid "Əsas Səhifə"
-msgstr "Homepage"
+msgid "Ana Səhifə"
+msgstr "Home"
 
 #: contact/templates/contact.html:24 contact/templates/contact.html:27
 #: core/templates/includes/footer.html:15
@@ -409,7 +409,7 @@ msgstr "was developed by GUYS Digital Agency."
 
 #: core/templates/includes/header.html:17
 msgid "Ana Səhifə"
-msgstr "Homepage"
+msgstr "Home"
 
 #: core/templates/includes/header.html:18 core/templates/index.html:66
 msgid "Haqqımızda"
@@ -427,8 +427,8 @@ msgid "Partnyorlarımız"
 msgstr "Our Partners"
 
 #: core/templates/index.html:8
-msgid "Əsas Səhifə | AOPE"
-msgstr "Homepage | AOPE"
+msgid "Ana Səhifə | AOPE"
+msgstr "Home | AOPE"
 
 #: core/templates/index.html:30
 msgid "Kral Hüseyn 64B"

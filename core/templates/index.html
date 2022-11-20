@@ -5,7 +5,7 @@
 {% load static i18n %}
 
 {% block title %}
-{% trans "Əsas Səhifə | AOPE" %} 
+{% trans "Ana Səhifə | AOPE" %} 
 {% endblock %}
 
 {% block css %} 
@@ -17,14 +17,12 @@ id="homepage"
 {% endblock %}
 
 {% block content %}
-
-
   <div class="container">
     <div class="logo-contact">
       <div class="logo">
         <img src="{% static 'img/logo/aope_logo_white.png' %}" alt="AOPE logo">
       </div>
-      <div class="contact">
+      <div class="contact d-none d-lg-flex" style="margin-left: auto; margin-right: 40px;">
         <div class="location">
           <span><i class="fa-solid fa-location-dot"></i></span>
           <p> {% trans "Kral Hüseyn 64B" %}<br>{% trans "Bakı, Azərbaycan" %}</p>
@@ -34,6 +32,27 @@ id="homepage"
           <p>(+994 12) 561 08 83<br>(+994 51) 394 33 95<br></p>
         </div>
       </div>
+      <form action="{% url 'set_language' %}" method="post">
+        {% csrf_token %}
+        <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+        <div class="dropdown">
+            <button class="dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="/static/img/icon/{{ LANGUAGE_CODE }}.png" alt="{{ LANGUAGE_CODE }}" height="25"><span>{{ LANGUAGE_CODE }}</span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                {% get_current_language as LANGUAGE_CODE %}
+                {% get_available_languages as LANGUAGES %}
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% for language in languages %}
+                    {% if language.code != LANGUAGE_CODE %}
+                        <button type="submit" name="language" value="{{ language.code }}">
+                            <img src="/static/img/icon/{{ language.code }}.png" alt="{{ language.code }}" height="25"><span>{{ language.code }}</span>
+                        </button>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+      </form>
     </div>
 
     <div class="main-menu">
@@ -70,29 +89,6 @@ id="homepage"
             <li><a href="/membership"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp; {% trans "Üzvlük" %}</a></li>
             <li><a href="/contact"><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp; {% trans "Əlaqə" %}</a></li>
           </ul>
-          <form action="{% url 'set_language' %}" method="post">
-            {% csrf_token %}
-            <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
-            <div class="dropdown">
-                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="/static/img/icon/{{ LANGUAGE_CODE }}.png" alt="{{ LANGUAGE_CODE }}" height="25">
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    {% get_current_language as LANGUAGE_CODE %}
-                    {% get_available_languages as LANGUAGES %}
-                    {% get_language_info_list for LANGUAGES as languages %}
-                    {% for language in languages %}
-                        {% if language.code != LANGUAGE_CODE %}
-                            <button type="submit" name="language" value="{{ language.code }}">
-                                <div>
-                                    <img src="/static/img/icon/{{ language.code }}.png" alt="{{ language.code }}" height="25">
-                                </div>
-                            </button>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-            </div>
-        </form>
         </div>
       </div>
     </div>
