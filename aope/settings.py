@@ -87,13 +87,18 @@ WSGI_APPLICATION = 'aope.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'db_name',
-        'USER': 'db_user',
-        'PASSWORD': '12345',
-        'HOST': 'localhost',
-        'PORT': 5432
+        'NAME': os.getenv('POSTGRES_DB', 'aope'),
+        'USER': os.getenv('POSTGRES_USER', 'aope'),
+        'PORT': os.getenv('POSTGRES_PORT', 5432),
+        'PASSWORD': os.getenv('POSTGRES_PASSWORD', 'aope123!'),
+        'HOST': os.getenv('POSTGRES_HOST', '127.0.0.1'),
+        'PORT': os.environ.get('POSTGRES_PORT', '5432')
     }
-}
+    #     'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
+    }
 
 
 # DATABASES = {
