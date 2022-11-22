@@ -22,8 +22,8 @@ class News(models.Model):
     description3 = models.TextField('Məzmun2', max_length = 2000, null=True, blank=True)
     description4 = models.TextField('Məzmun3', max_length = 2000, null=True, blank=True)
     description5 = models.TextField('Məzmun4', max_length = 2000, null=True, blank=True)
-    pdf_title = models.CharField('Pdf adı', max_length = 256)
-    pdf = models.FileField(blank=True, upload_to='media/pdf')
+    pdf_title = models.CharField('Pdf faylının adı', max_length = 256, null=True, blank=True)
+    pdf = models.FileField('Pdf faylı', upload_to='media/pdf', null=True, blank=True)
     slug = models.SlugField('Slug', max_length = 256, unique = True, editable = False)
 
     # moderations
