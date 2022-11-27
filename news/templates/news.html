@@ -40,9 +40,9 @@
                                 <div class="card-img-top" style="background-image: url({{i.image.url}});"></div>
                             </a>
                             <div class="card-body">
-                                <span>{{ i.created_at }}</span>
+                                <span>{{ i.created_at|date:"F d, Y" }}</span>
                                 <a href="{{i.get_absolute_url}}"><h5 class="card-title">{{i.title}}</h5></a>
-                                <p class="card-text">{{i.description1}}</p>
+                                <p class="card-text">{{i.description1|truncatechars:130}}</p>
                                 <a href="{{i.get_absolute_url}}" class="btn btn-green">{% trans "Daha ətraflı" %}</a>
                             </div>
                         </div>     
